@@ -1,0 +1,287 @@
+extends ../layout
+block content
+	// Content Header (Page header)
+	section.content-header
+		h1
+			| Simple Tables
+			small preview of simple tables
+		ol.breadcrumb
+			li
+				a(href='#')
+					i.fa.fa-dashboard
+					| Home
+			li
+				a(href='#') Tables
+			li.active Simple
+	// Main content
+	section.content
+		.row
+			.col-md-6
+				.box
+					.box-header
+						h3.box-title Bordered Table
+					// /.box-header
+					.box-body
+						table.table.table-bordered
+							tr
+								th(style='width: 10px') #
+								th Task
+								th Progress
+								th(style='width: 40px') Label
+							tr
+								td 1.
+								td Update software
+								td
+									.progress.xs
+										.progress-bar.progress-bar-danger(style='width: 55%')
+								td
+									span.badge.bg-red 55%
+							tr
+								td 2.
+								td Clean database
+								td
+									.progress.xs
+										.progress-bar.progress-bar-yellow(style='width: 70%')
+								td
+									span.badge.bg-yellow 70%
+							tr
+								td 3.
+								td Cron job running
+								td
+									.progress.xs.progress-striped.active
+										.progress-bar.progress-bar-primary(style='width: 30%')
+								td
+									span.badge.bg-light-blue 30%
+							tr
+								td 4.
+								td Fix and squish bugs
+								td
+									.progress.xs.progress-striped.active
+										.progress-bar.progress-bar-success(style='width: 90%')
+								td
+									span.badge.bg-green 90%
+					// /.box-body
+					.box-footer.clearfix
+						ul.pagination.pagination-sm.no-margin.pull-right
+							li
+								a(href='#') &laquo;
+							li
+								a(href='#') 1
+							li
+								a(href='#') 2
+							li
+								a(href='#') 3
+							li
+								a(href='#') &raquo;
+				// /.box
+				.box
+					.box-header
+						h3.box-title Condensed Full Width Table
+					// /.box-header
+					.box-body.no-padding
+						table.table.table-condensed
+							tr
+								th(style='width: 10px') #
+								th Task
+								th Progress
+								th(style='width: 40px') Label
+							tr
+								td 1.
+								td Update software
+								td
+									.progress.xs
+										.progress-bar.progress-bar-danger(style='width: 55%')
+								td
+									span.badge.bg-red 55%
+							tr
+								td 2.
+								td Clean database
+								td
+									.progress.xs
+										.progress-bar.progress-bar-yellow(style='width: 70%')
+								td
+									span.badge.bg-yellow 70%
+							tr
+								td 3.
+								td Cron job running
+								td
+									.progress.xs.progress-striped.active
+										.progress-bar.progress-bar-primary(style='width: 30%')
+								td
+									span.badge.bg-light-blue 30%
+							tr
+								td 4.
+								td Fix and squish bugs
+								td
+									.progress.xs.progress-striped.active
+										.progress-bar.progress-bar-success(style='width: 90%')
+								td
+									span.badge.bg-green 90%
+					// /.box-body
+				// /.box
+			// /.col
+			.col-md-6
+				.box
+					.box-header
+						h3.box-title Simple Full Width Table
+						.box-tools
+							ul.pagination.pagination-sm.no-margin.pull-right
+								li
+									a(href='#') &laquo;
+								li
+									a(href='#') 1
+								li
+									a(href='#') 2
+								li
+									a(href='#') 3
+								li
+									a(href='#') &raquo;
+					// /.box-header
+					.box-body.no-padding
+						table.table
+							tr
+								th(style='width: 10px') #
+								th Task
+								th Progress
+								th(style='width: 40px') Label
+							tr
+								td 1.
+								td Update software
+								td
+									.progress.xs
+										.progress-bar.progress-bar-danger(style='width: 55%')
+								td
+									span.badge.bg-red 55%
+							tr
+								td 2.
+								td Clean database
+								td
+									.progress.xs
+										.progress-bar.progress-bar-yellow(style='width: 70%')
+								td
+									span.badge.bg-yellow 70%
+							tr
+								td 3.
+								td Cron job running
+								td
+									.progress.xs.progress-striped.active
+										.progress-bar.progress-bar-primary(style='width: 30%')
+								td
+									span.badge.bg-light-blue 30%
+							tr
+								td 4.
+								td Fix and squish bugs
+								td
+									.progress.xs.progress-striped.active
+										.progress-bar.progress-bar-success(style='width: 90%')
+								td
+									span.badge.bg-green 90%
+					// /.box-body
+				// /.box
+				.box
+					.box-header
+						h3.box-title Striped Full Width Table
+					// /.box-header
+					.box-body.no-padding
+						table.table.table-striped
+							tr
+								th(style='width: 10px') #
+								th Task
+								th Progress
+								th(style='width: 40px') Label
+							tr
+								td 1.
+								td Update software
+								td
+									.progress.xs
+										.progress-bar.progress-bar-danger(style='width: 55%')
+								td
+									span.badge.bg-red 55%
+							tr
+								td 2.
+								td Clean database
+								td
+									.progress.xs
+										.progress-bar.progress-bar-yellow(style='width: 70%')
+								td
+									span.badge.bg-yellow 70%
+							tr
+								td 3.
+								td Cron job running
+								td
+									.progress.xs.progress-striped.active
+										.progress-bar.progress-bar-primary(style='width: 30%')
+								td
+									span.badge.bg-light-blue 30%
+							tr
+								td 4.
+								td Fix and squish bugs
+								td
+									.progress.xs.progress-striped.active
+										.progress-bar.progress-bar-success(style='width: 90%')
+								td
+									span.badge.bg-green 90%
+					// /.box-body
+				// /.box
+			// /.col
+		// /.row
+		.row
+			.col-xs-12
+				.box
+					.box-header
+						h3.box-title Responsive Hover Table
+						.box-tools
+							.input-group
+								input.form-control.input-sm.pull-right(type='text', name='table_search', style='width: 150px;', placeholder='Search')
+								.input-group-btn
+									button.btn.btn-sm.btn-default
+										i.fa.fa-search
+					// /.box-header
+					.box-body.table-responsive.no-padding
+						table.table.table-hover
+							tr
+								th ID
+								th User
+								th Date
+								th Status
+								th Reason
+							tr
+								td 183
+								td John Doe
+								td 11-7-2014
+								td
+									span.label.label-success Approved
+								td Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.
+							tr
+								td 219
+								td Jane Doe
+								td 11-7-2014
+								td
+									span.label.label-warning Pending
+								td Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.
+							tr
+								td 657
+								td Bob Doe
+								td 11-7-2014
+								td
+									span.label.label-primary Approved
+								td Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.
+							tr
+								td 175
+								td Mike Doe
+								td 11-7-2014
+								td
+									span.label.label-danger Denied
+								td Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.
+					// /.box-body
+				// /.box
+	// /.content
+block javascript
+	// jQuery 2.0.2
+	script(src='/js/libs/jquery.min.js')
+	// Bootstrap
+	script(src='/js/bootstrap.min.js', type='text/javascript')
+	// AdminLTE App
+	script(src='/js/AdminLTE/app.js', type='text/javascript')
+	// AdminLTE for demo purposes
+	script(src='/js/AdminLTE/demo.js', type='text/javascript')

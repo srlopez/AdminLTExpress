@@ -1,0 +1,277 @@
+extends ../layout
+block content
+	// Content Header (Page header)
+	section.content-header
+		h1
+			| General Form Elements
+			small Preview
+		ol.breadcrumb
+			li
+				a(href='#')
+					i.fa.fa-dashboard
+					| Home
+			li
+				a(href='#') Forms
+			li.active General Elements
+	// Main content
+	section.content
+		.row
+			// left column
+			.col-md-6
+				// general form elements
+				.box.box-primary
+					.box-header
+						h3.box-title Quick Example
+					// /.box-header
+					// form start
+					form(role='form')
+						.box-body
+							.form-group
+								label(for='exampleInputEmail1') Email address
+								input#exampleInputEmail1.form-control(type='email', placeholder='Enter email')
+							.form-group
+								label(for='exampleInputPassword1') Password
+								input#exampleInputPassword1.form-control(type='password', placeholder='Password')
+							.form-group
+								label(for='exampleInputFile') File input
+								input#exampleInputFile(type='file')
+								p.help-block Example block-level help text here.
+							.checkbox
+								label
+									input(type='checkbox')
+									| Check me out
+						// /.box-body
+						.box-footer
+							button.btn.btn-primary(type='submit') Submit
+				// /.box
+				// Form Element sizes
+				.box.box-success
+					.box-header
+						h3.box-title Different Height
+					.box-body
+						input.form-control.input-lg(type='text', placeholder='.input-lg')
+						br
+						input.form-control(type='text', placeholder='Default input')
+						br
+						input.form-control.input-sm(type='text', placeholder='.input-sm')
+					// /.box-body
+				// /.box
+				.box.box-danger
+					.box-header
+						h3.box-title Different Width
+					.box-body
+						.row
+							.col-xs-3
+								input.form-control(type='text', placeholder='.col-xs-3')
+							.col-xs-4
+								input.form-control(type='text', placeholder='.col-xs-4')
+							.col-xs-5
+								input.form-control(type='text', placeholder='.col-xs-5')
+					// /.box-body
+				// /.box
+				// Input addon
+				.box.box-info
+					.box-header
+						h3.box-title Input Addon
+					.box-body
+						.input-group
+							span.input-group-addon @
+							input.form-control(type='text', placeholder='Username')
+						br
+						.input-group
+							input.form-control(type='text')
+							span.input-group-addon .00
+						br
+						.input-group
+							span.input-group-addon $
+							input.form-control(type='text')
+							span.input-group-addon .00
+						h4 With icons
+						.input-group
+							span.input-group-addon
+								i.fa.fa-envelope
+							input.form-control(type='text', placeholder='Email')
+						br
+						.input-group
+							input.form-control(type='text')
+							span.input-group-addon
+								i.fa.fa-check
+						br
+						.input-group
+							span.input-group-addon
+								i.fa.fa-dollar
+							input.form-control(type='text')
+							span.input-group-addon
+								i.fa.fa-ambulance
+						h4 With checkbox and radio inputs
+						.row
+							.col-lg-6
+								.input-group
+									span.input-group-addon
+										input(type='checkbox')
+									input.form-control(type='text')
+								// /input-group
+							// /.col-lg-6
+							.col-lg-6
+								.input-group
+									span.input-group-addon
+										input(type='radio')
+									input.form-control(type='text')
+								// /input-group
+							// /.col-lg-6
+						// /.row
+						h4 With buttons
+						p.margin
+							| Large:
+							code .input-group.input-group-lg
+						.input-group.input-group-lg
+							.input-group-btn
+								button.btn.btn-warning.dropdown-toggle(type='button', data-toggle='dropdown')
+									| Action
+									span.fa.fa-caret-down
+								ul.dropdown-menu
+									li
+										a(href='#') Action
+									li
+										a(href='#') Another action
+									li
+										a(href='#') Something else here
+									li.divider
+									li
+										a(href='#') Separated link
+							// /btn-group
+							input.form-control(type='text')
+						// /input-group
+						p.margin Normal
+						.input-group
+							.input-group-btn
+								button.btn.btn-danger(type='button') Action
+							// /btn-group
+							input.form-control(type='text')
+						// /input-group
+						p.margin
+							| Small
+							code .input-group.input-group-sm
+						.input-group.input-group-sm
+							input.form-control(type='text')
+							span.input-group-btn
+								button.btn.btn-info.btn-flat(type='button') Go!
+						// /input-group
+					// /.box-body
+				// /.box
+			// /.col (left)
+			// right column
+			.col-md-6
+				// general form elements disabled
+				.box.box-warning
+					.box-header
+						h3.box-title General Elements
+					// /.box-header
+					.box-body
+						form(role='form')
+							// text input
+							.form-group
+								label Text
+								input.form-control(type='text', placeholder='Enter ...')
+							.form-group
+								label Text Disabled
+								input.form-control(type='text', placeholder='Enter ...', disabled='')
+							// textarea
+							.form-group
+								label Textarea
+								textarea.form-control(rows='3', placeholder='Enter ...')
+							.form-group
+								label Textarea Disabled
+								textarea.form-control(rows='3', placeholder='Enter ...', disabled='')
+							// input states
+							.form-group.has-success
+								label.control-label(for='inputSuccess')
+									i.fa.fa-check
+									| Input with success
+								input#inputSuccess.form-control(type='text', placeholder='Enter ...')
+							.form-group.has-warning
+								label.control-label(for='inputWarning')
+									i.fa.fa-warning
+									| Input with warning
+								input#inputWarning.form-control(type='text', placeholder='Enter ...')
+							.form-group.has-error
+								label.control-label(for='inputError')
+									i.fa.fa-times-circle-o
+									| Input with error
+								input#inputError.form-control(type='text', placeholder='Enter ...')
+							// checkbox
+							.form-group
+								.checkbox
+									label
+										input(type='checkbox')
+										| Checkbox 1
+								.checkbox
+									label
+										input(type='checkbox')
+										| Checkbox 2
+								.checkbox
+									label
+										input(type='checkbox', disabled='')
+										| Checkbox disabled
+							// radio
+							.form-group
+								.radio
+									label
+										input#optionsRadios1(type='radio', name='optionsRadios', value='option1', checked='')
+										| Option one is this and that&mdash;be sure to include why it&apos;s great
+								.radio
+									label
+										input#optionsRadios2(type='radio', name='optionsRadios', value='option2')
+										| Option two can be something else and selecting it will deselect option one
+								.radio
+									label
+										input#optionsRadios3(type='radio', name='optionsRadios', value='option3', disabled='')
+										| Option three is disabled
+							// select
+							.form-group
+								label Select
+								select.form-control
+									option option 1
+									option option 2
+									option option 3
+									option option 4
+									option option 5
+							.form-group
+								label Select Disabled
+								select.form-control(disabled='')
+									option option 1
+									option option 2
+									option option 3
+									option option 4
+									option option 5
+							// Select multiple
+							.form-group
+								label Select Multiple
+								select.form-control(multiple='')
+									option option 1
+									option option 2
+									option option 3
+									option option 4
+									option option 5
+							.form-group
+								label Select Multiple Disabled
+								select.form-control(multiple='', disabled='')
+									option option 1
+									option option 2
+									option option 3
+									option option 4
+									option option 5
+					// /.box-body
+				// /.box
+			// /.col (right)
+		// /.row
+	// /.content
+block javascript
+	// jQuery 2.0.2
+	script(src='/js/libs/jquery.min.js')
+	// Bootstrap
+	script(src='/js/bootstrap.min.js', type='text/javascript')
+	// AdminLTE App
+	script(src='/js/AdminLTE/app.js', type='text/javascript')
+	// AdminLTE for demo purposes
+	script(src='/js/AdminLTE/demo.js', type='text/javascript')

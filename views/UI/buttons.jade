@@ -1,0 +1,880 @@
+extends ../layout
+block content
+        // Content Header (Page header)
+        section.content-header
+          h1
+            | Buttons
+            small Control panel
+          ol.breadcrumb
+            li
+              a(href='#')
+                i.fa.fa-dashboard
+                | Home
+            li
+              a(href='#') UI
+            li.active Buttons
+        // Main content
+        section.content
+          .row
+            .col-md-12
+              .box.box-primary
+                .box-header
+                  i.fa.fa-edit
+                  h3.box-title Buttons
+                .box-body.pad.table-responsive
+                  p
+                    | Various types of buttons. Using the base class
+                    code .btn
+                  table.table.table-bordered.text-center
+                    tr
+                      th Normal
+                      th
+                        | Large
+                        code .btn-lg
+                      th
+                        | Mini
+                        code .btn-sm
+                      th
+                        | Flat
+                        code .btn-flat
+                      th
+                        | Disabled
+                        code .disabled
+                    tr
+                      td
+                        button.btn.btn-default Default
+                      td
+                        button.btn.btn-default.btn-lg Default
+                      td
+                        button.btn.btn-default.btn-sm Default
+                      td
+                        button.btn.btn-default.btn-flat Default
+                      td
+                        button.btn.btn-default.disabled Default
+                    tr
+                      td
+                        button.btn.btn-primary Primary
+                      td
+                        button.btn.btn-primary.btn-lg Primary
+                      td
+                        button.btn.btn-primary.btn-sm Primary
+                      td
+                        button.btn.btn-primary.btn-flat Primary
+                      td
+                        button.btn.btn-primary.disabled Primary
+                    tr
+                      td
+                        button.btn.btn-success Success
+                      td
+                        button.btn.btn-success.btn-lg Success
+                      td
+                        button.btn.btn-success.btn-sm Success
+                      td
+                        button.btn.btn-success.btn-flat Success
+                      td
+                        button.btn.btn-success.disabled Success
+                    tr
+                      td
+                        button.btn.btn-info Info
+                      td
+                        button.btn.btn-info.btn-lg Info
+                      td
+                        button.btn.btn-info.btn-sm Info
+                      td
+                        button.btn.btn-info.btn-flat Info
+                      td
+                        button.btn.btn-info.disabled Info
+                    tr
+                      td
+                        button.btn.btn-danger Danger
+                      td
+                        button.btn.btn-danger.btn-lg Danger
+                      td
+                        button.btn.btn-danger.btn-sm Danger
+                      td
+                        button.btn.btn-danger.btn-flat Danger
+                      td
+                        button.btn.btn-danger.disabled Danger
+                    tr
+                      td
+                        button.btn.btn-warning Warning
+                      td
+                        button.btn.btn-warning.btn-lg Warning
+                      td
+                        button.btn.btn-warning.btn-sm Warning
+                      td
+                        button.btn.btn-warning.btn-flat Warning
+                      td
+                        button.btn.btn-warning.disabled Warning
+                // /.box
+            // /.col
+          // ./row
+          .row
+            .col-md-6
+              // Block buttons
+              .box
+                .box-header
+                  h3.box-title Block Buttons
+                .box-body
+                  button.btn.btn-default.btn-block .btn-block
+                  button.btn.btn-default.btn-block.btn-flat .btn-block .btn-flat
+                  button.btn.btn-default.btn-block.btn-sm .btn-block .btn-sm
+              // /.box
+              // Horizontal grouping
+              .box
+                .box-header
+                  h3.box-title Horizontal Button Group
+                .box-body.table-responsive.pad
+                  p
+                    | Horizontal button groups are easy to create with bootstrap. Just add your buttons
+                    | inside
+                    code &lt;div class=&quot;btn-group&quot;&gt;&lt;/div&gt;
+                  table.table.table-bordered
+                    tr
+                      th Button
+                      th Icons
+                      th Flat
+                      th Dropdown
+                    // Default
+                    tr
+                      td
+                        .btn-group
+                          button.btn.btn-default(type='button') Left
+                          button.btn.btn-default(type='button') Middle
+                          button.btn.btn-default(type='button') Right
+                      td
+                        .btn-group
+                          button.btn.btn-default(type='button')
+                            i.fa.fa-align-left
+                          button.btn.btn-default(type='button')
+                            i.fa.fa-align-center
+                          button.btn.btn-default(type='button')
+                            i.fa.fa-align-right
+                      td
+                        .btn-group
+                          button.btn.btn-default.btn-flat(type='button')
+                            i.fa.fa-align-left
+                          button.btn.btn-default.btn-flat(type='button')
+                            i.fa.fa-align-center
+                          button.btn.btn-default.btn-flat(type='button')
+                            i.fa.fa-align-right
+                      td
+                        .btn-group
+                          button.btn.btn-default(type='button') 1
+                          button.btn.btn-default(type='button') 2
+                          .btn-group
+                            button.btn.btn-default.dropdown-toggle(type='button', data-toggle='dropdown')
+                              span.caret
+                            ul.dropdown-menu
+                              li
+                                a(href='#') Dropdown link
+                              li
+                                a(href='#') Dropdown link
+                    // ./default
+                    // Info
+                    tr
+                      td
+                        .btn-group
+                          button.btn.btn-info(type='button') Left
+                          button.btn.btn-info(type='button') Middle
+                          button.btn.btn-info(type='button') Right
+                      td
+                        .btn-group
+                          button.btn.btn-info(type='button')
+                            i.fa.fa-align-left
+                          button.btn.btn-info(type='button')
+                            i.fa.fa-align-center
+                          button.btn.btn-info(type='button')
+                            i.fa.fa-align-right
+                      td
+                        .btn-group
+                          button.btn.btn-info.btn-flat(type='button')
+                            i.fa.fa-align-left
+                          button.btn.btn-info.btn-flat(type='button')
+                            i.fa.fa-align-center
+                          button.btn.btn-info.btn-flat(type='button')
+                            i.fa.fa-align-right
+                      td
+                        .btn-group
+                          button.btn.btn-info(type='button') 1
+                          button.btn.btn-info(type='button') 2
+                          .btn-group
+                            button.btn.btn-info.dropdown-toggle(type='button', data-toggle='dropdown')
+                              span.caret
+                            ul.dropdown-menu
+                              li
+                                a(href='#') Dropdown link
+                              li
+                                a(href='#') Dropdown link
+                    // /. info
+                    // /.danger
+                    tr
+                      td
+                        .btn-group
+                          button.btn.btn-danger(type='button') Left
+                          button.btn.btn-danger(type='button') Middle
+                          button.btn.btn-danger(type='button') Right
+                      td
+                        .btn-group
+                          button.btn.btn-danger(type='button')
+                            i.fa.fa-align-left
+                          button.btn.btn-danger(type='button')
+                            i.fa.fa-align-center
+                          button.btn.btn-danger(type='button')
+                            i.fa.fa-align-right
+                      td
+                        .btn-group
+                          button.btn.btn-danger.btn-flat(type='button')
+                            i.fa.fa-align-left
+                          button.btn.btn-danger.btn-flat(type='button')
+                            i.fa.fa-align-center
+                          button.btn.btn-danger.btn-flat(type='button')
+                            i.fa.fa-align-right
+                      td
+                        .btn-group
+                          button.btn.btn-danger(type='button') 1
+                          button.btn.btn-danger(type='button') 2
+                          .btn-group
+                            button.btn.btn-danger.dropdown-toggle(type='button', data-toggle='dropdown')
+                              span.caret
+                            ul.dropdown-menu
+                              li
+                                a(href='#') Dropdown link
+                              li
+                                a(href='#') Dropdown link
+                    // /.danger
+                    // warning
+                    tr
+                      td
+                        .btn-group
+                          button.btn.btn-warning(type='button') Left
+                          button.btn.btn-warning(type='button') Middle
+                          button.btn.btn-warning(type='button') Right
+                      td
+                        .btn-group
+                          button.btn.btn-warning(type='button')
+                            i.fa.fa-align-left
+                          button.btn.btn-warning(type='button')
+                            i.fa.fa-align-center
+                          button.btn.btn-warning(type='button')
+                            i.fa.fa-align-right
+                      td
+                        .btn-group
+                          button.btn.btn-warning.btn-flat(type='button')
+                            i.fa.fa-align-left
+                          button.btn.btn-warning.btn-flat(type='button')
+                            i.fa.fa-align-center
+                          button.btn.btn-warning.btn-flat(type='button')
+                            i.fa.fa-align-right
+                      td
+                        .btn-group
+                          button.btn.btn-warning(type='button') 1
+                          button.btn.btn-warning(type='button') 2
+                          .btn-group
+                            button.btn.btn-warning.dropdown-toggle(type='button', data-toggle='dropdown')
+                              span.caret
+                            ul.dropdown-menu
+                              li
+                                a(href='#') Dropdown link
+                              li
+                                a(href='#') Dropdown link
+                    // /.warning
+                    // success
+                    tr
+                      td
+                        .btn-group
+                          button.btn.btn-success(type='button') Left
+                          button.btn.btn-success(type='button') Middle
+                          button.btn.btn-success(type='button') Right
+                      td
+                        .btn-group
+                          button.btn.btn-success(type='button')
+                            i.fa.fa-align-left
+                          button.btn.btn-success(type='button')
+                            i.fa.fa-align-center
+                          button.btn.btn-success(type='button')
+                            i.fa.fa-align-right
+                      td
+                        .btn-group
+                          button.btn.btn-success.btn-flat(type='button')
+                            i.fa.fa-align-left
+                          button.btn.btn-success.btn-flat(type='button')
+                            i.fa.fa-align-center
+                          button.btn.btn-success.btn-flat(type='button')
+                            i.fa.fa-align-right
+                      td
+                        .btn-group
+                          button.btn.btn-success(type='button') 1
+                          button.btn.btn-success(type='button') 2
+                          .btn-group
+                            button.btn.btn-success.dropdown-toggle(type='button', data-toggle='dropdown')
+                              span.caret
+                            ul.dropdown-menu
+                              li
+                                a(href='#') Dropdown link
+                              li
+                                a(href='#') Dropdown link
+                    // /.success
+              // /.box
+              .box
+                .box-header
+                  h3.box-title Button Addon
+                .box-body
+                  p With dropdown
+                  .input-group.margin
+                    .input-group-btn
+                      button.btn.btn-default.dropdown-toggle(type='button', data-toggle='dropdown')
+                        | Action
+                        span.fa.fa-caret-down
+                      ul.dropdown-menu
+                        li
+                          a(href='#') Action
+                        li
+                          a(href='#') Another action
+                        li
+                          a(href='#') Something else here
+                        li.divider
+                        li
+                          a(href='#') Separated link
+                    // /btn-group
+                    input.form-control(type='text')
+                  // /input-group
+                  p Normal
+                  .input-group.margin
+                    .input-group-btn
+                      button.btn.btn-danger(type='button') Action
+                    // /btn-group
+                    input.form-control(type='text')
+                  // /input-group
+                  p Flat
+                  .input-group.margin
+                    input.form-control(type='text')
+                    span.input-group-btn
+                      button.btn.btn-info.btn-flat(type='button') Go!
+                  // /input-group
+                // /.box-body
+              // /.box
+              // split buttons box
+              .box
+                .box-header
+                  h3.box-title Split buttons
+                .box-body
+                  // Split button
+                  p Normal slplit buttons:
+                  .margin
+                    .btn-group
+                      button.btn.btn-default(type='button') Action
+                      button.btn.btn-default.dropdown-toggle(type='button', data-toggle='dropdown')
+                        span.caret
+                        span.sr-only Toggle Dropdown
+                      ul.dropdown-menu(role='menu')
+                        li
+                          a(href='#') Action
+                        li
+                          a(href='#') Another action
+                        li
+                          a(href='#') Something else here
+                        li.divider
+                        li
+                          a(href='#') Separated link
+                    .btn-group
+                      button.btn.btn-info(type='button') Action
+                      button.btn.btn-info.dropdown-toggle(type='button', data-toggle='dropdown')
+                        span.caret
+                        span.sr-only Toggle Dropdown
+                      ul.dropdown-menu(role='menu')
+                        li
+                          a(href='#') Action
+                        li
+                          a(href='#') Another action
+                        li
+                          a(href='#') Something else here
+                        li.divider
+                        li
+                          a(href='#') Separated link
+                    .btn-group
+                      button.btn.btn-danger(type='button') Action
+                      button.btn.btn-danger.dropdown-toggle(type='button', data-toggle='dropdown')
+                        span.caret
+                        span.sr-only Toggle Dropdown
+                      ul.dropdown-menu(role='menu')
+                        li
+                          a(href='#') Action
+                        li
+                          a(href='#') Another action
+                        li
+                          a(href='#') Something else here
+                        li.divider
+                        li
+                          a(href='#') Separated link
+                    .btn-group
+                      button.btn.btn-success(type='button') Action
+                      button.btn.btn-success.dropdown-toggle(type='button', data-toggle='dropdown')
+                        span.caret
+                        span.sr-only Toggle Dropdown
+                      ul.dropdown-menu(role='menu')
+                        li
+                          a(href='#') Action
+                        li
+                          a(href='#') Another action
+                        li
+                          a(href='#') Something else here
+                        li.divider
+                        li
+                          a(href='#') Separated link
+                    .btn-group
+                      button.btn.btn-warning(type='button') Action
+                      button.btn.btn-warning.dropdown-toggle(type='button', data-toggle='dropdown')
+                        span.caret
+                        span.sr-only Toggle Dropdown
+                      ul.dropdown-menu(role='menu')
+                        li
+                          a(href='#') Action
+                        li
+                          a(href='#') Another action
+                        li
+                          a(href='#') Something else here
+                        li.divider
+                        li
+                          a(href='#') Separated link
+                  // flat split buttons
+                  p Flat split buttons:
+                  .margin
+                    .btn-group
+                      button.btn.btn-default.btn-flat(type='button') Action
+                      button.btn.btn-default.btn-flat.dropdown-toggle(type='button', data-toggle='dropdown')
+                        span.caret
+                        span.sr-only Toggle Dropdown
+                      ul.dropdown-menu(role='menu')
+                        li
+                          a(href='#') Action
+                        li
+                          a(href='#') Another action
+                        li
+                          a(href='#') Something else here
+                        li.divider
+                        li
+                          a(href='#') Separated link
+                    .btn-group
+                      button.btn.btn-info.btn-flat(type='button') Action
+                      button.btn.btn-info.btn-flat.dropdown-toggle(type='button', data-toggle='dropdown')
+                        span.caret
+                        span.sr-only Toggle Dropdown
+                      ul.dropdown-menu(role='menu')
+                        li
+                          a(href='#') Action
+                        li
+                          a(href='#') Another action
+                        li
+                          a(href='#') Something else here
+                        li.divider
+                        li
+                          a(href='#') Separated link
+                    .btn-group
+                      button.btn.btn-danger.btn-flat(type='button') Action
+                      button.btn.btn-danger.btn-flat.dropdown-toggle(type='button', data-toggle='dropdown')
+                        span.caret
+                        span.sr-only Toggle Dropdown
+                      ul.dropdown-menu(role='menu')
+                        li
+                          a(href='#') Action
+                        li
+                          a(href='#') Another action
+                        li
+                          a(href='#') Something else here
+                        li.divider
+                        li
+                          a(href='#') Separated link
+                    .btn-group
+                      button.btn.btn-success.btn-flat(type='button') Action
+                      button.btn.btn-success.btn-flat.dropdown-toggle(type='button', data-toggle='dropdown')
+                        span.caret
+                        span.sr-only Toggle Dropdown
+                      ul.dropdown-menu(role='menu')
+                        li
+                          a(href='#') Action
+                        li
+                          a(href='#') Another action
+                        li
+                          a(href='#') Something else here
+                        li.divider
+                        li
+                          a(href='#') Separated link
+                    .btn-group
+                      button.btn.btn-warning.btn-flat(type='button') Action
+                      button.btn.btn-warning.btn-flat.dropdown-toggle(type='button', data-toggle='dropdown')
+                        span.caret
+                        span.sr-only Toggle Dropdown
+                      ul.dropdown-menu(role='menu')
+                        li
+                          a(href='#') Action
+                        li
+                          a(href='#') Another action
+                        li
+                          a(href='#') Something else here
+                        li.divider
+                        li
+                          a(href='#') Separated link
+                // /.box-body
+              // end split buttons box
+              // social buttons
+              .box
+                .box-header
+                  h3.box-title
+                    | Social Buttons (By
+                    a(href='https://github.com/lipis/bootstrap-social') Lipis
+                    | )
+                .box-body
+                  a.btn.btn-block.btn-social.btn-bitbucket
+                    i.fa.fa-bitbucket
+                    | Sign in with Bitbucket
+                  a.btn.btn-block.btn-social.btn-dropbox
+                    i.fa.fa-dropbox
+                    | Sign in with Dropbox
+                  a.btn.btn-block.btn-social.btn-facebook
+                    i.fa.fa-facebook
+                    | Sign in with Facebook
+                  a.btn.btn-block.btn-social.btn-flickr
+                    i.fa.fa-flickr
+                    | Sign in with Flickr
+                  a.btn.btn-block.btn-social.btn-foursquare
+                    i.fa.fa-foursquare
+                    | Sign in with Foursquare
+                  a.btn.btn-block.btn-social.btn-github
+                    i.fa.fa-github
+                    | Sign in with GitHub
+                  a.btn.btn-block.btn-social.btn-google-plus
+                    i.fa.fa-google-plus
+                    | Sign in with Google
+                  a.btn.btn-block.btn-social.btn-instagram
+                    i.fa.fa-instagram
+                    | Sign in with Instagram
+                  a.btn.btn-block.btn-social.btn-linkedin
+                    i.fa.fa-linkedin
+                    | Sign in with LinkedIn
+                  a.btn.btn-block.btn-social.btn-tumblr
+                    i.fa.fa-tumblr
+                    | Sign in with Tumblr
+                  a.btn.btn-block.btn-social.btn-twitter
+                    i.fa.fa-twitter
+                    | Sign in with Twitter
+                  a.btn.btn-block.btn-social.btn-vk
+                    i.fa.fa-vk
+                    | Sign in with VK
+                  br
+                  .text-center
+                    a.btn.btn-social-icon.btn-bitbucket
+                      i.fa.fa-bitbucket
+                    a.btn.btn-social-icon.btn-dropbox
+                      i.fa.fa-dropbox
+                    a.btn.btn-social-icon.btn-facebook
+                      i.fa.fa-facebook
+                    a.btn.btn-social-icon.btn-flickr
+                      i.fa.fa-flickr
+                    a.btn.btn-social-icon.btn-foursquare
+                      i.fa.fa-foursquare
+                    a.btn.btn-social-icon.btn-github
+                      i.fa.fa-github
+                    a.btn.btn-social-icon.btn-google-plus
+                      i.fa.fa-google-plus
+                    a.btn.btn-social-icon.btn-instagram
+                      i.fa.fa-instagram
+                    a.btn.btn-social-icon.btn-linkedin
+                      i.fa.fa-linkedin
+                    a.btn.btn-social-icon.btn-tumblr
+                      i.fa.fa-tumblr
+                    a.btn.btn-social-icon.btn-twitter
+                      i.fa.fa-twitter
+                    a.btn.btn-social-icon.btn-vk
+                      i.fa.fa-vk
+              // /.box
+            // /.col
+            .col-md-6
+              // Application buttons
+              .box
+                .box-header
+                  h3.box-title Application Buttons
+                .box-body
+                  p
+                    | Add the classes
+                    code .btn.btn-app
+                    | to an
+                    code &lt;a&gt;
+                    | tag to achieve the following:
+                  a.btn.btn-app
+                    i.fa.fa-edit
+                    | Edit
+                  a.btn.btn-app
+                    i.fa.fa-play
+                    | Play
+                  a.btn.btn-app
+                    i.fa.fa-repeat
+                    | Repeat
+                  a.btn.btn-app
+                    i.fa.fa-pause
+                    | Pause
+                  a.btn.btn-app
+                    i.fa.fa-save
+                    | Save
+                  a.btn.btn-app
+                    span.badge.bg-yellow 3
+                    i.fa.fa-bullhorn
+                    | Notifications
+                  a.btn.btn-app
+                    span.badge.bg-green 300
+                    i.fa.fa-barcode
+                    | Products
+                  a.btn.btn-app
+                    span.badge.bg-purple 891
+                    i.fa.fa-users
+                    | Users
+                  a.btn.btn-app
+                    span.badge.bg-teal 67
+                    i.fa.fa-inbox
+                    | Orders
+                  a.btn.btn-app
+                    span.badge.bg-aqua 12
+                    i.fa.fa-envelope
+                    | Inbox
+                  a.btn.btn-app
+                    span.badge.bg-red 531
+                    i.fa.fa-heart-o
+                    | Likes
+                // /.box-body
+              // /.box
+              // Various colors
+              .box
+                .box-header
+                  h3.box-title Different colors
+                .box-body
+                  p
+                    | Mix and match with various background colors. Use base class
+                    code .btn
+                    | and add any available
+                    code .bg-*
+                    | class
+                  //
+                     You may notice a .margin class added
+                                                        here but that's only to make the content
+                                                        display correctly without having to use a table
+                  p
+                    button.btn.bg-maroon.btn-flat.margin .btn.bg-maroon.btn-flat
+                    button.btn.bg-purple.btn-flat.margin .btn.bg-purple.btn-flat
+                    button.btn.bg-navy.btn-flat.margin .btn.bg-navy.btn-flat
+                    button.btn.bg-orange.btn-flat.margin .btn.bg-orange.btn-flat
+                    button.btn.bg-olive.btn-flat.margin .btn.bg-olive.btn-flat
+                  p
+                    button.btn.bg-maroon.margin .btn.bg-maroon
+                    button.btn.bg-purple.margin .btn.bg-purple
+                    button.btn.bg-navy.margin .btn.bg-navy
+                    button.btn.bg-orange.margin .btn.bg-orange
+                    button.btn.bg-olive.margin .btn.bg-olive
+              // /.box
+              // Vertical grouping
+              .box
+                .box-header
+                  h3.box-title Vertical Button Group
+                .box-body.table-responsive.pad
+                  p
+                    | Vertical button groups are easy to create with bootstrap. Just add your buttons
+                    | inside
+                    code &lt;div class=&quot;btn-group-vertical&quot;&gt;&lt;/div&gt;
+                  table.table.table-bordered
+                    tr
+                      th Button
+                      th Icons
+                      th Flat
+                      th Dropdown
+                    // Default
+                    tr
+                      td
+                        .btn-group-vertical
+                          button.btn.btn-default(type='button') Top
+                          button.btn.btn-default(type='button') Middle
+                          button.btn.btn-default(type='button') Bottom
+                      td
+                        .btn-group-vertical
+                          button.btn.btn-default(type='button')
+                            i.fa.fa-align-left
+                          button.btn.btn-default(type='button')
+                            i.fa.fa-align-center
+                          button.btn.btn-default(type='button')
+                            i.fa.fa-align-right
+                      td
+                        .btn-group-vertical
+                          button.btn.btn-default.btn-flat(type='button')
+                            i.fa.fa-align-left
+                          button.btn.btn-default.btn-flat(type='button')
+                            i.fa.fa-align-center
+                          button.btn.btn-default.btn-flat(type='button')
+                            i.fa.fa-align-right
+                      td
+                        .btn-group-vertical
+                          button.btn.btn-default(type='button') 1
+                          button.btn.btn-default(type='button') 2
+                          .btn-group
+                            button.btn.btn-default.dropdown-toggle(type='button', data-toggle='dropdown')
+                              span.caret
+                            ul.dropdown-menu
+                              li
+                                a(href='#') Dropdown link
+                              li
+                                a(href='#') Dropdown link
+                    // ./default
+                    // Info
+                    tr
+                      td
+                        .btn-group-vertical
+                          button.btn.btn-info(type='button') Top
+                          button.btn.btn-info(type='button') Middle
+                          button.btn.btn-info(type='button') Bottom
+                      td
+                        .btn-group-vertical
+                          button.btn.btn-info(type='button')
+                            i.fa.fa-align-left
+                          button.btn.btn-info(type='button')
+                            i.fa.fa-align-center
+                          button.btn.btn-info(type='button')
+                            i.fa.fa-align-right
+                      td
+                        .btn-group-vertical
+                          button.btn.btn-info.btn-flat(type='button')
+                            i.fa.fa-align-left
+                          button.btn.btn-info.btn-flat(type='button')
+                            i.fa.fa-align-center
+                          button.btn.btn-info.btn-flat(type='button')
+                            i.fa.fa-align-right
+                      td
+                        .btn-group-vertical
+                          button.btn.btn-info(type='button') 1
+                          button.btn.btn-info(type='button') 2
+                          .btn-group
+                            button.btn.btn-info.dropdown-toggle(type='button', data-toggle='dropdown')
+                              span.caret
+                            ul.dropdown-menu
+                              li
+                                a(href='#') Dropdown link
+                              li
+                                a(href='#') Dropdown link
+                    // /. info
+                    // /.danger
+                    tr
+                      td
+                        .btn-group-vertical
+                          button.btn.btn-danger(type='button') Top
+                          button.btn.btn-danger(type='button') Middle
+                          button.btn.btn-danger(type='button') Bottom
+                      td
+                        .btn-group-vertical
+                          button.btn.btn-danger(type='button')
+                            i.fa.fa-align-left
+                          button.btn.btn-danger(type='button')
+                            i.fa.fa-align-center
+                          button.btn.btn-danger(type='button')
+                            i.fa.fa-align-right
+                      td
+                        .btn-group-vertical
+                          button.btn.btn-danger.btn-flat(type='button')
+                            i.fa.fa-align-left
+                          button.btn.btn-danger.btn-flat(type='button')
+                            i.fa.fa-align-center
+                          button.btn.btn-danger.btn-flat(type='button')
+                            i.fa.fa-align-right
+                      td
+                        .btn-group-vertical
+                          button.btn.btn-danger(type='button') 1
+                          button.btn.btn-danger(type='button') 2
+                          .btn-group
+                            button.btn.btn-danger.dropdown-toggle(type='button', data-toggle='dropdown')
+                              span.caret
+                            ul.dropdown-menu
+                              li
+                                a(href='#') Dropdown link
+                              li
+                                a(href='#') Dropdown link
+                    // /.danger
+                    // warning
+                    tr
+                      td
+                        .btn-group-vertical
+                          button.btn.btn-warning(type='button') Top
+                          button.btn.btn-warning(type='button') Middle
+                          button.btn.btn-warning(type='button') Bottom
+                      td
+                        .btn-group-vertical
+                          button.btn.btn-warning(type='button')
+                            i.fa.fa-align-left
+                          button.btn.btn-warning(type='button')
+                            i.fa.fa-align-center
+                          button.btn.btn-warning(type='button')
+                            i.fa.fa-align-right
+                      td
+                        .btn-group-vertical
+                          button.btn.btn-warning.btn-flat(type='button')
+                            i.fa.fa-align-left
+                          button.btn.btn-warning.btn-flat(type='button')
+                            i.fa.fa-align-center
+                          button.btn.btn-warning.btn-flat(type='button')
+                            i.fa.fa-align-right
+                      td
+                        .btn-group-vertical
+                          button.btn.btn-warning(type='button') 1
+                          button.btn.btn-warning(type='button') 2
+                          .btn-group
+                            button.btn.btn-warning.dropdown-toggle(type='button', data-toggle='dropdown')
+                              span.caret
+                            ul.dropdown-menu
+                              li
+                                a(href='#') Dropdown link
+                              li
+                                a(href='#') Dropdown link
+                    // /.warning
+                    // success
+                    tr
+                      td
+                        .btn-group-vertical
+                          button.btn.btn-success(type='button') Top
+                          button.btn.btn-success(type='button') Middle
+                          button.btn.btn-success(type='button') Bottom
+                      td
+                        .btn-group-vertical
+                          button.btn.btn-success(type='button')
+                            i.fa.fa-align-left
+                          button.btn.btn-success(type='button')
+                            i.fa.fa-align-center
+                          button.btn.btn-success(type='button')
+                            i.fa.fa-align-right
+                      td
+                        .btn-group-vertical
+                          button.btn.btn-success.btn-flat(type='button')
+                            i.fa.fa-align-left
+                          button.btn.btn-success.btn-flat(type='button')
+                            i.fa.fa-align-center
+                          button.btn.btn-success.btn-flat(type='button')
+                            i.fa.fa-align-right
+                      td
+                        .btn-group-vertical
+                          button.btn.btn-success(type='button') 1
+                          button.btn.btn-success(type='button') 2
+                          .btn-group
+                            button.btn.btn-success.dropdown-toggle(type='button', data-toggle='dropdown')
+                              span.caret
+                            ul.dropdown-menu
+                              li
+                                a(href='#') Dropdown link
+                              li
+                                a(href='#') Dropdown link
+                    // /.success
+              // /.box
+            // /.col
+          // /. row
+        // /.content
+block javascript
+    // jQuery 2.0.2
+    script(src='/js/libs/jquery.min.js')
+    // Bootstrap
+    script(src='/js/bootstrap.min.js', type='text/javascript')
+    // AdminLTE App
+    script(src='/js/AdminLTE/app.js', type='text/javascript')
+    // AdminLTE for demo purposes
+    script(src='/js/AdminLTE/demo.js', type='text/javascript')

@@ -1,0 +1,97 @@
+extends ../layout
+block content
+	// Content Header (Page header)
+	section.content-header
+		h1
+			| Flot Charts
+			small preview sample
+		ol.breadcrumb
+			li
+				a(href='#')
+					i.fa.fa-dashboard
+					| Home
+			li.active Blank page
+	// Main content
+	section.content
+		.row
+			.col-xs-12
+				// interactive chart
+				.box.box-primary
+					.box-header
+						i.fa.fa-bar-chart-o
+						h3.box-title Interactive Area Chart
+						.box-tools.pull-right
+							| Real time
+							#realtime.btn-group(data-toggle='btn-toggle')
+								button.btn.btn-default.btn-xs.active(type='button', data-toggle='on') On
+								button.btn.btn-default.btn-xs(type='button', data-toggle='off') Off
+					.box-body
+						#interactive(style='height: 300px;')
+					// /.box-body
+				// /.box
+			// /.col
+		// /.row
+		.row
+			.col-md-6
+				// Line chart
+				.box.box-primary
+					.box-header
+						i.fa.fa-bar-chart-o
+						h3.box-title Line Chart
+					.box-body
+						#line-chart(style='height: 300px;')
+					// /.box-body
+				// /.box
+				// Area chart
+				.box.box-primary
+					.box-header
+						i.fa.fa-bar-chart-o
+						h3.box-title Full Width Area Chart
+					.box-body
+						#area-chart.full-width-chart(style='height: 338px;')
+					// /.box-body
+				// /.box
+			// /.col
+			.col-md-6
+				// Bar chart
+				.box.box-primary
+					.box-header
+						i.fa.fa-bar-chart-o
+						h3.box-title Bar Chart
+					.box-body
+						#bar-chart(style='height: 300px;')
+					// /.box-body
+				// /.box
+				// Donut chart
+				.box.box-primary
+					.box-header
+						i.fa.fa-bar-chart-o
+						h3.box-title Donut Chart
+					.box-body
+						#donut-chart(style='height: 300px;')
+					// /.box-body
+				// /.box
+			// /.col
+		// /.row
+	// /.content
+// /.right-side
+// ./wrapper
+block javascript
+	// jQuery 2.0.2
+	script(src='/js/libs/jquery.min.js')
+	// Bootstrap
+	script(src='/js/bootstrap.min.js', type='text/javascript')
+	// AdminLTE App
+	script(src='/js/AdminLTE/app.js', type='text/javascript')
+	// AdminLTE for demo purposes
+	script(src='/js/AdminLTE/demo.js', type='text/javascript')
+	// FLOT CHARTS
+	script(src='/js/plugins/flot/jquery.flot.min.js', type='text/javascript')
+	// FLOT RESIZE PLUGIN - allows the chart to redraw when the window is resized
+	script(src='/js/plugins/flot/jquery.flot.resize.min.js', type='text/javascript')
+	// FLOT PIE PLUGIN - also used to draw donut charts
+	script(src='/js/plugins/flot/jquery.flot.pie.min.js', type='text/javascript')
+	// FLOT CATEGORIES PLUGIN - Used to draw bar charts
+	script(src='/js/plugins/flot/jquery.flot.categories.min.js', type='text/javascript')
+	// Page script
+	script(src='/js/AdminLTE/charts/flot.js', type='text/javascript')

@@ -1,0 +1,111 @@
+extends layout
+block content
+	// Content Header (Page header)
+	section.content-header
+		h1
+			| Calendar
+			small Control panel
+		ol.breadcrumb
+			li
+				a(href='#')
+					i.fa.fa-dashboard
+					| Home
+			li.active Calendar
+	// Main content
+	section.content
+		.row
+			.col-md-3
+				.box.box-primary
+					.box-header
+						h4.box-title Draggable Events
+					.box-body
+						// the events
+						#external-events
+							.external-event.bg-green Lunch
+							.external-event.bg-red Go home
+							.external-event.bg-aqua Do homework
+							.external-event.bg-yellow Work on UI design
+							.external-event.bg-navy Sleep tight
+							p
+								input#drop-remove(type='checkbox')
+								label(for='drop-remove') remove after drop
+					// /.box-body
+				// /. box
+				.box.box-primary
+					.box-header
+						h3.box-title Create Event
+					.box-body
+						.btn-group(style='width: 100%; margin-bottom: 10px;')
+							button#color-chooser-btn.btn.btn-danger.btn-block.btn-sm.dropdown-toggle(type='button', data-toggle='dropdown')
+								| Color
+								span.caret
+							ul#color-chooser.dropdown-menu
+								li
+									a.text-green(href='#')
+										i.fa.fa-square
+										| Green
+								li
+									a.text-blue(href='#')
+										i.fa.fa-square
+										| Blue
+								li
+									a.text-navy(href='#')
+										i.fa.fa-square
+										| Navy
+								li
+									a.text-yellow(href='#')
+										i.fa.fa-square
+										| Yellow
+								li
+									a.text-orange(href='#')
+										i.fa.fa-square
+										| Orange
+								li
+									a.text-aqua(href='#')
+										i.fa.fa-square
+										| Aqua
+								li
+									a.text-red(href='#')
+										i.fa.fa-square
+										| Red
+								li
+									a.text-fuchsia(href='#')
+										i.fa.fa-square
+										| Fuchsia
+								li
+									a.text-purple(href='#')
+										i.fa.fa-square
+										| Purple
+						// /btn-group
+						.input-group
+							input#new-event.form-control(type='text', placeholder='Event Title')
+							.input-group-btn
+								button#add-new-event.btn.btn-default.btn-flat(type='button') Add
+							// /btn-group
+						// /input-group
+			// /.col
+			.col-md-9
+				.box.box-primary
+					.box-body.no-padding
+						// THE CALENDAR
+						#calendar
+					// /.box-body
+				// /. box
+			// /.col
+		// /.row
+	// /.content
+block javascript
+	// jQuery 2.0.2
+	script(src='/js/libs/jquery.min.js')
+	// jQuery UI 1.10.3
+	script(src='/js/jquery-ui-1.10.3.min.js', type='text/javascript')
+	// Bootstrap
+	script(src='/js/bootstrap.min.js', type='text/javascript')
+	// AdminLTE App
+	script(src='/js/AdminLTE/app.js', type='text/javascript')
+	// AdminLTE for demo purposes
+	script(src='/js/AdminLTE/demo.js', type='text/javascript')
+	// fullCalendar
+	script(src='/js/plugins/fullcalendar/fullcalendar.min.js', type='text/javascript')
+	// Page specific script
+	script(src='/js/AdminLTE/calendar.js', type='text/javascript')

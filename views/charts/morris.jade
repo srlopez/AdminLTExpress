@@ -1,0 +1,70 @@
+extends ../layout
+block content
+	// Content Header (Page header)
+	section.content-header
+		h1
+			| Morris Charts
+			small Preview sample
+		ol.breadcrumb
+			li
+				a(href='#')
+					i.fa.fa-dashboard
+					| Home
+			li
+				a(href='#') Charts
+			li.active Morris
+	// Main content
+	section.content
+		.row
+			.col-md-6
+				// AREA CHART
+				.box.box-primary
+					.box-header
+						h3.box-title Area Chart
+					.box-body.chart-responsive
+						#revenue-chart.chart(style='height: 300px;')
+					// /.box-body
+				// /.box
+				// DONUT CHART
+				.box.box-danger
+					.box-header
+						h3.box-title Donut Chart
+					.box-body.chart-responsive
+						#sales-chart.chart(style='height: 300px; position: relative;')
+					// /.box-body
+				// /.box
+			// /.col (LEFT)
+			.col-md-6
+				// LINE CHART
+				.box.box-info
+					.box-header
+						h3.box-title Line Chart
+					.box-body.chart-responsive
+						#line-chart.chart(style='height: 300px;')
+					// /.box-body
+				// /.box
+				// BAR CHART
+				.box.box-success
+					.box-header
+						h3.box-title Bar Chart
+					.box-body.chart-responsive
+						#bar-chart.chart(style='height: 300px;')
+					// /.box-body
+				// /.box
+			// /.col (RIGHT)
+		// /.row
+	// /.content
+block javascript
+	// jQuery 2.0.2
+	script(src='/js/libs/jquery.min.js')
+	// Bootstrap
+	script(src='/js/bootstrap.min.js', type='text/javascript')
+	// Morris.js charts
+	script(src='/js/libs/raphael-min.js')
+	script(src='/js/plugins/morris/morris.min.js', type='text/javascript')
+	// AdminLTE App
+	script(src='/js/AdminLTE/app.js', type='text/javascript')
+	// AdminLTE for demo purposes
+	script(src='/js/AdminLTE/demo.js', type='text/javascript')
+	// Page script
+	script(src='/js/AdminLTE/charts/morris.js', type='text/javascript')

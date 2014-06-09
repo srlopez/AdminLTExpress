@@ -1,0 +1,172 @@
+extends ../layout
+block content
+	// Content Header (Page header)
+	section.content-header
+		h1
+			| Timeline
+			small example
+		ol.breadcrumb
+			li
+				a(href='#')
+					i.fa.fa-dashboard
+					| Home
+			li
+				a(href='#') UI
+			li.active Timeline
+	// Main content
+	section.content
+		// row
+		.row
+			.col-md-12
+				// The time line
+				ul.timeline
+					// timeline time label
+					li.time-label
+						span.bg-red
+							| 10 Feb. 2014
+					// /.timeline-label
+					// timeline item
+					li
+						i.fa.fa-envelope.bg-blue
+						.timeline-item
+							span.time
+								i.fa.fa-clock-o
+								| 12:05
+							h3.timeline-header
+								a(href='#') Support Team
+								| sent you and email
+							.timeline-body
+								| Etsy doostang zoodles disqus groupon greplin oooj voxy zoodles,
+								| weebly ning heekya handango imeem plugg dopplr jibjab, movity
+								| jajah plickers sifteo edmodo ifttt zimbra. Babblely odeo kaboodle
+								| quora plaxo ideeli hulu weebly balihoo...
+							.timeline-footer
+								a.btn.btn-primary.btn-xs Read more
+								a.btn.btn-danger.btn-xs Delete
+					// END timeline item
+					// timeline item
+					li
+						i.fa.fa-user.bg-aqua
+						.timeline-item
+							span.time
+								i.fa.fa-clock-o
+								| 5 mins ago
+							h3.timeline-header.no-border
+								a(href='#') Sarah Young
+								| accepted your friend request
+					// END timeline item
+					// timeline item
+					li
+						i.fa.fa-comments.bg-yellow
+						.timeline-item
+							span.time
+								i.fa.fa-clock-o
+								| 27 mins ago
+							h3.timeline-header
+								a(href='#') Jay White
+								| commented on your post
+							.timeline-body
+								| Take me to your leader!
+								| Switzerland is small and neutral!
+								| We are more like Germany, ambitious and misunderstood!
+							.timeline-footer
+								a.btn.btn-warning.btn-flat.btn-xs View comment
+					// END timeline item
+					// timeline time label
+					li.time-label
+						span.bg-green
+							| 3 Jan. 2014
+					// /.timeline-label
+					// timeline item
+					li
+						i.fa.fa-camera.bg-purple
+						.timeline-item
+							span.time
+								i.fa.fa-clock-o
+								| 2 days ago
+							h3.timeline-header
+								a(href='#') Mina Lee
+								| uploaded new photos
+							.timeline-body
+								img.margin(src='http://placehold.it/150x100', alt='...')
+								img.margin(src='http://placehold.it/150x100', alt='...')
+								img.margin(src='http://placehold.it/150x100', alt='...')
+								img.margin(src='http://placehold.it/150x100', alt='...')
+					// END timeline item
+					// timeline item
+					li
+						i.fa.fa-video-camera.bg-maroon
+						.timeline-item
+							span.time
+								i.fa.fa-clock-o
+								| 5 days ago
+							h3.timeline-header
+								a(href='#') Mr. Doe
+								| shared a video
+							.timeline-body
+								iframe(width='300', height='169', src='//www.youtube.com/embed/fLe_qO4AE-M', frameborder='0', allowfullscreen='')
+							.timeline-footer
+								a.btn.btn-xs.bg-maroon(href='#') See comments
+					// END timeline item
+					li
+						i.fa.fa-clock-o
+			// /.col
+		// /.row
+		.row(style='margin-top: 10px;')
+			.col-md-12
+				.box.box-primary
+					.box-header
+						h3.box-title
+							i.fa.fa-code
+							| Timeline Markup
+					.box-body
+						pre(style='font-weight: 600;').
+							\n<ul class="timeline">
+
+									<!-- timeline time label -->
+									<li class="time-label">
+											<span class="bg-red">
+													10 Feb. 2014
+											</span>
+									</li>
+									<!-- /.timeline-label -->
+
+									<!-- timeline item -->
+									<li>
+											<!-- timeline icon -->
+											<i class="fa fa-envelope bg-blue"></i>
+											<div class="timeline-item">
+													<span class="time"><i class="fa fa-clock-o"></i> 12:05</span>
+
+													<h3 class="timeline-header"><a href="#">Support Team</a> ...</h3>
+
+													<div class="timeline-body">
+															...
+															Content goes here
+													</div>
+
+													<div class='timeline-footer'>
+															<a class="btn btn-primary btn-xs">...</a>
+													</div>
+											</div>
+									</li>
+									<!-- END timeline item -->
+
+									...
+
+							</ul>
+
+					// /.box-body
+				// /.box
+			// /.col
+		// /.row
+	// /.content
+block javascript
+	// jQuery 2.0.2
+	script(src='/js/libs/jquery.min.js')
+	// Bootstrap
+	script(src='/js/bootstrap.min.js', type='text/javascript')
+	// AdminLTE App
+	script(src='/js/AdminLTE/app.js', type='text/javascript')
+	// AdminLTE for demo purposes
+	script(src='/js/AdminLTE/demo.js', type='text/javascript')

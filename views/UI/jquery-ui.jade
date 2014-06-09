@@ -1,0 +1,98 @@
+extends ../layout
+block content
+	// Content Header (Page header)
+	section.content-header
+		h1
+			| jQuery UI
+			small Control panel
+		ol.breadcrumb
+			li
+				a(href='#')
+					i.fa.fa-dashboard
+					| Home
+			li.active Blank page
+	// Main content
+	section.content
+		.row
+			.col-md-6
+				.box.box-primary
+					.box-header
+						h3.box-title Accordion
+					.box-body.pad
+						#accordion
+							h3 Section 1
+							div
+								p
+									| Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+									| ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+									| amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+									| odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+							h3 Section 2
+							div
+								p
+									| Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
+									| purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
+									| velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
+									| suscipit faucibus urna.
+							h3 Section 3
+							div
+								p
+									| Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
+									| Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
+									| ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
+									| lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
+								ul
+									li List item one
+									li List item two
+									li List item three
+							h3 Section 4
+							div
+								p
+									| Cras dictum. Pellentesque habitant morbi tristique senectus et netus
+									| et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
+									| faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
+									| mauris vel est.
+								p
+									| Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus.
+									| Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+									| inceptos himenaeos.
+				// /.box accordion
+			// /.col left
+			// Right column
+			.col-md-6
+				.box.box-danger
+					.box-header
+						h3.box-title Date Picker
+					.box-body
+						p
+							| Date:
+							input#datepicker(type='text')
+						p Date range:
+						label(for='from') From
+						input#from(type='text', name='from')
+						label(for='to') to
+						input#to(type='text', name='to')
+				.box.box-info
+					.box-header
+						h3.box-title Dialog
+					.box-body
+						#dialog(title='Basic dialog')
+							p
+								| This is an animated dialog which is useful for displaying information. The dialog window can be moved, resized and closed with the &apos;x&apos; icon.
+						button#opener Open Dialog
+			// /.col right
+		// /.row
+	// /.content
+block javascript
+	// jQuery 2.0.2
+	script(src='/js/libs/jquery.min.js')
+	// jquery ui 1.10.3
+	script(src='/js/libs/jquery-ui.min.js')
+	// Bootstrap
+	script(src='/js/bootstrap.min.js', type='text/javascript')
+	// AdminLTE App
+	script(src='/js/AdminLTE/app.js', type='text/javascript')
+	// AdminLTE for demo purposes
+	script(src='/js/AdminLTE/demo.js', type='text/javascript')
+	//Page
+	script(src='/js/AdminLTE/UI/jquery-ui.js', type='text/javascript')

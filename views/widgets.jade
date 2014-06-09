@@ -1,0 +1,579 @@
+extends layout
+block content
+	// Content Header (Page header)
+	section.content-header
+		h1
+			| Widgets
+			small Preview page
+		ol.breadcrumb
+			li
+				a(href='#')
+					i.fa.fa-dashboard
+					| Home
+			li.active Widgets
+	// Main content
+	section.content
+		h4.page-header
+			| AdminLTE Small Boxes
+			small
+				| Small boxes are used for viewing statistics. To create a small box use the class
+				code .small-box
+				| and mix &amp; match using the
+				code bg-*
+				| classes.
+		// Small boxes (Stat box)
+		.row
+			.col-lg-3.col-xs-6
+				// small box
+				.small-box.bg-aqua
+					.inner
+						h3
+							| 150
+						p
+							| New Orders
+					.icon
+						i.ion.ion-bag
+					a.small-box-footer(href='#')
+						| More info
+						i.fa.fa-arrow-circle-right
+			// ./col
+			.col-lg-3.col-xs-6
+				// small box
+				.small-box.bg-green
+					.inner
+						h3
+							| 53
+							sup(style='font-size: 20px') %
+						p
+							| Bounce Rate
+					.icon
+						i.ion.ion-stats-bars
+					a.small-box-footer(href='#')
+						| More info
+						i.fa.fa-arrow-circle-right
+			// ./col
+			.col-lg-3.col-xs-6
+				// small box
+				.small-box.bg-yellow
+					.inner
+						h3
+							| 44
+						p
+							| User Registrations
+					.icon
+						i.ion.ion-person-add
+					a.small-box-footer(href='#')
+						| More info
+						i.fa.fa-arrow-circle-right
+			// ./col
+			.col-lg-3.col-xs-6
+				// small box
+				.small-box.bg-red
+					.inner
+						h3
+							| 65
+						p
+							| Unique Visitors
+					.icon
+						i.ion.ion-pie-graph
+					a.small-box-footer(href='#')
+						| More info
+						i.fa.fa-arrow-circle-right
+			// ./col
+		// /.row
+		// Small boxes (Stat box)
+		.row
+			.col-lg-3.col-xs-6
+				// small box
+				.small-box.bg-blue
+					.inner
+						h3
+							| 230
+						p
+							| Sales
+					.icon
+						i.ion.ion-ios7-cart-outline
+					a.small-box-footer(href='#')
+						| More info
+						i.fa.fa-arrow-circle-right
+			// ./col
+			.col-lg-3.col-xs-6
+				// small box
+				.small-box.bg-purple
+					.inner
+						h3
+							| 80
+							sup(style='font-size: 20px') %
+						p
+							| Conversion Rate
+					.icon
+						i.ion.ion-ios7-briefcase-outline
+					a.small-box-footer(href='#')
+						| More info
+						i.fa.fa-arrow-circle-right
+			// ./col
+			.col-lg-3.col-xs-6
+				// small box
+				.small-box.bg-teal
+					.inner
+						h3
+							| 14
+						p
+							| Notofications
+					.icon
+						i.ion.ion-ios7-alarm-outline
+					a.small-box-footer(href='#')
+						| More info
+						i.fa.fa-arrow-circle-right
+			// ./col
+			.col-lg-3.col-xs-6
+				// small box
+				.small-box.bg-maroon
+					.inner
+						h3
+							| 160
+						p
+							| Products
+					.icon
+						i.ion.ion-ios7-pricetag-outline
+					a.small-box-footer(href='#')
+						| More info
+						i.fa.fa-arrow-circle-right
+			// ./col
+		// /.row
+		// Widgets as boxes
+		h4.page-header
+			| AdminLTE Boxes
+			small
+				| We use the base class
+				code .box
+				| to create widgets simply.
+		.row
+			.col-md-4
+				// Default box
+				.box
+					.box-header
+						h3.box-title Default Box (button tooltip)
+						.box-tools.pull-right
+							button.btn.btn-default.btn-sm(data-widget='collapse', data-toggle='tooltip', title='Collapse')
+								i.fa.fa-minus
+							button.btn.btn-default.btn-sm(data-widget='remove', data-toggle='tooltip', title='Remove')
+								i.fa.fa-times
+					.box-body
+						| Box class:
+						code .box
+						p
+							| amber, microbrewery abbey hydrometer, brewpub ale lauter tun saccharification oxidized barrel.
+							| berliner weisse wort chiller adjunct hydrometer alcohol aau!
+							| sour/acidic sour/acidic chocolate malt ipa ipa hydrometer.
+					// /.box-body
+					.box-footer
+						code .box-footer
+					// /.box-footer
+				// /.box
+			// /.col
+			.col-md-4
+				// Primary box
+				.box.box-primary
+					.box-header(data-toggle='tooltip', title='Header tooltip')
+						h3.box-title Primary Box (header tooltip)
+						.box-tools.pull-right
+							button.btn.btn-primary.btn-xs(data-widget='collapse')
+								i.fa.fa-minus
+							button.btn.btn-primary.btn-xs(data-widget='remove')
+								i.fa.fa-times
+					.box-body
+						| Box class:
+						code .box.box-primary
+						p
+							| amber, microbrewery abbey hydrometer, brewpub ale lauter tun saccharification oxidized barrel.
+							| berliner weisse wort chiller adjunct hydrometer alcohol aau!
+							| sour/acidic sour/acidic chocolate malt ipa ipa hydrometer.
+					// /.box-body
+					.box-footer
+						code .box-footer
+					// /.box-footer
+				// /.box
+			// /.col
+			.col-md-4
+				// Info box
+				.box.box-info
+					.box-header
+						h3.box-title Info Box
+						.box-tools.pull-right
+							.label.bg-aqua Label
+					.box-body
+						| Box class:
+						code .box.box-info
+						p
+							| amber, microbrewery abbey hydrometer, brewpub ale lauter tun saccharification oxidized barrel.
+							| berliner weisse wort chiller adjunct hydrometer alcohol aau!
+							| sour/acidic sour/acidic chocolate malt ipa ipa hydrometer.
+					// /.box-body
+					.box-footer
+						code .box-footer
+					// /.box-footer
+				// /.box
+			// /.col
+		// /.row
+		.row
+			.col-md-4
+				// Danger box
+				.box.box-danger
+					.box-header
+						h3.box-title Danger Box (Loading state)
+						.box-tools.pull-right
+							button.btn.btn-danger.btn-sm(data-widget='collapse')
+								i.fa.fa-minus
+							button.btn.btn-danger.btn-sm(data-widget='remove')
+								i.fa.fa-times
+					.box-body
+						| Box class:
+						code .box.box-danger
+						p
+							| amber, microbrewery abbey hydrometer, brewpub ale lauter tun saccharification oxidized barrel.
+							| berliner weisse wort chiller adjunct hydrometer alcohol aau!
+							| sour/acidic sour/acidic chocolate malt ipa ipa hydrometer.
+					// /.box-body
+					// Loading (remove the following to stop the loading)
+					.overlay
+					.loading-img
+					// end loading
+				// /.box
+			// /.col
+			.col-md-4
+				// Success box
+				.box.box-success
+					.box-header
+						h3.box-title Success Box (toggle buttons)
+						.box-tools.pull-right
+							.btn-group(data-toggle='btn-toggle')
+								button.btn.btn-success.btn-xs.active(type='button', data-toggle='on') Left
+								button.btn.btn-success.btn-xs(type='button', data-toggle='off') Right
+					.box-body
+						| Box class:
+						code .box.box-success
+						p
+							| amber, microbrewery abbey hydrometer, brewpub ale lauter tun saccharification oxidized barrel.
+							| berliner weisse wort chiller adjunct hydrometer alcohol aau!
+							| sour/acidic sour/acidic chocolate malt ipa ipa hydrometer.
+					// /.box-body
+				// /.box
+			// /.col
+			.col-md-4
+				// Warning box
+				.box.box-warning
+					.box-header
+						h3.box-title Warning Box
+						.box-tools.pull-right
+							ul.pagination.pagination-sm.inline
+								li
+									a(href='#') &laquo;
+								li
+									a(href='#') 1
+								li
+									a(href='#') 2
+								li
+									a(href='#') &raquo;
+					.box-body
+						| Box class:
+						code .box.box-warning
+						p
+							| amber, microbrewery abbey hydrometer, brewpub ale lauter tun saccharification oxidized barrel.
+							| berliner weisse wort chiller adjunct hydrometer alcohol aau!
+							| sour/acidic sour/acidic chocolate malt ipa ipa hydrometer.
+					// /.box-body
+				// /.box
+			// /.col
+		// /.row
+		h4.page-header
+			| AdminLTE Solid Boxes
+			small
+				| We use the base class
+				code .box
+				| and
+				code .box-solid
+				| to create solid boxes that look like this.
+		// Solid boxes
+		.row
+			.col-md-4
+				// Default box
+				.box.box-solid
+					.box-header
+						h3.box-title Default Solid Box
+						.box-tools.pull-right
+							button.btn.btn-default.btn-sm(data-widget='collapse')
+								i.fa.fa-minus
+							button.btn.btn-default.btn-sm(data-widget='remove')
+								i.fa.fa-times
+					.box-body
+						| Box class:
+						code .box.box-solid
+						p
+							| amber, microbrewery abbey hydrometer, brewpub ale lauter tun saccharification oxidized barrel.
+							| berliner weisse wort chiller adjunct hydrometer alcohol aau!
+							| sour/acidic sour/acidic chocolate malt ipa ipa hydrometer.
+					// /.box-body
+				// /.box
+			// /.col
+			.col-md-4
+				// Primary box
+				.box.box-solid.box-primary
+					.box-header
+						h3.box-title Primary Solid Box
+						.box-tools.pull-right
+							button.btn.btn-primary.btn-sm(data-widget='collapse')
+								i.fa.fa-minus
+							button.btn.btn-primary.btn-sm(data-widget='remove')
+								i.fa.fa-times
+					.box-body
+						| Box class:
+						code .box.box-solid.box-primary
+						p
+							| amber, microbrewery abbey hydrometer, brewpub ale lauter tun saccharification oxidized barrel.
+							| berliner weisse wort chiller adjunct hydrometer alcohol aau!
+							| sour/acidic sour/acidic chocolate malt ipa ipa hydrometer.
+					// /.box-body
+				// /.box
+			// /.col
+			.col-md-4
+				// Info box
+				.box.box-solid.box-info
+					.box-header
+						h3.box-title Info Solid Box
+						.box-tools.pull-right
+							button.btn.btn-info.btn-sm(data-widget='collapse')
+								i.fa.fa-minus
+							button.btn.btn-info.btn-sm(data-widget='remove')
+								i.fa.fa-times
+					.box-body
+						| Box class:
+						code .box.box-solid.box-info
+						p
+							| amber, microbrewery abbey hydrometer, brewpub ale lauter tun saccharification oxidized barrel.
+							| berliner weisse wort chiller adjunct hydrometer alcohol aau!
+							| sour/acidic sour/acidic chocolate malt ipa ipa hydrometer.
+					// /.box-body
+				// /.box
+			// /.col
+		// /.row
+		.row
+			.col-md-4
+				// Danger box
+				.box.box-solid.box-danger
+					.box-header
+						h3.box-title Danger Solid Box
+						.box-tools.pull-right
+							button.btn.btn-danger.btn-sm(data-widget='collapse')
+								i.fa.fa-minus
+							button.btn.btn-danger.btn-sm(data-widget='remove')
+								i.fa.fa-times
+					.box-body
+						| Box class:
+						code .box.box-solid.box-danger
+						p
+							| amber, microbrewery abbey hydrometer, brewpub ale lauter tun saccharification oxidized barrel.
+							| berliner weisse wort chiller adjunct hydrometer alcohol aau!
+							| sour/acidic sour/acidic chocolate malt ipa ipa hydrometer.
+					// /.box-body
+				// /.box
+			// /.col
+			.col-md-4
+				// Success box
+				.box.box-solid.box-success
+					.box-header
+						h3.box-title Success Solid Box
+						.box-tools.pull-right
+							button.btn.btn-success.btn-sm(data-widget='collapse')
+								i.fa.fa-minus
+							button.btn.btn-success.btn-sm(data-widget='remove')
+								i.fa.fa-times
+					.box-body
+						| Box class:
+						code .box.box-solid.box-success
+						p
+							| amber, microbrewery abbey hydrometer, brewpub ale lauter tun saccharification oxidized barrel.
+							| berliner weisse wort chiller adjunct hydrometer alcohol aau!
+							| sour/acidic sour/acidic chocolate malt ipa ipa hydrometer.
+					// /.box-body
+				// /.box
+			// /.col
+			.col-md-4
+				// Warning box
+				.box.box-solid.box-warning
+					.box-header
+						h3.box-title Warning Solid Box
+						.box-tools.pull-right
+							button.btn.btn-warning.btn-sm(data-widget='collapse')
+								i.fa.fa-minus
+							button.btn.btn-warning.btn-sm(data-widget='remove')
+								i.fa.fa-times
+					.box-body
+						| Box class:
+						code .box.box-solid.box-warning
+						p
+							| amber, microbrewery abbey hydrometer, brewpub ale lauter tun saccharification oxidized barrel.
+							| berliner weisse wort chiller adjunct hydrometer alcohol aau!
+							| sour/acidic sour/acidic chocolate malt ipa ipa hydrometer.
+					// /.box-body
+				// /.box
+			// /.col
+		// /.row
+		h4.page-header
+			| AdminLTE Tiles
+			small
+				| To create a tile we create a solid box and a
+				code .bg-*
+				| class ( * being the name of the color) to the box.
+		// Solid boxes
+		.row
+			.col-md-4
+				// Navy tile
+				.box.box-solid.bg-navy
+					.box-header
+						h3.box-title Navy Tile
+					.box-body
+						| Box class:
+						code .box.box-solid.bg-navy
+						p
+							| amber, microbrewery abbey hydrometer, brewpub ale lauter tun saccharification oxidized barrel.
+							| berliner weisse wort chiller adjunct hydrometer alcohol aau!
+							| sour/acidic sour/acidic chocolate malt ipa ipa hydrometer.
+					// /.box-body
+				// /.box
+			// /.col
+			.col-md-4
+				// Primary tile
+				.box.box-solid.bg-light-blue
+					.box-header
+						h3.box-title Primary Tile
+					.box-body
+						| Box class:
+						code .box.box-solid.bg-light-blue
+						p
+							| amber, microbrewery abbey hydrometer, brewpub ale lauter tun saccharification oxidized barrel.
+							| berliner weisse wort chiller adjunct hydrometer alcohol aau!
+							| sour/acidic sour/acidic chocolate malt ipa ipa hydrometer.
+					// /.box-body
+				// /.box
+			// /.col
+			.col-md-4
+				// Info box
+				.box.box-solid.bg-aqua
+					.box-header
+						h3.box-title Info Tile
+					.box-body
+						| Box class:
+						code .box.box-solid.bg-aqua
+						p
+							| amber, microbrewery abbey hydrometer, brewpub ale lauter tun saccharification oxidized barrel.
+							| berliner weisse wort chiller adjunct hydrometer alcohol aau!
+							| sour/acidic sour/acidic chocolate malt ipa ipa hydrometer.
+					// /.box-body
+				// /.box
+			// /.col
+		// /.row
+		.row
+			.col-md-4
+				// Danger box
+				.box.box-solid.bg-red
+					.box-header
+						h3.box-title Danger Tile
+					.box-body
+						| Box class:
+						code .box.box-solid.bg-red
+						p
+							| amber, microbrewery abbey hydrometer, brewpub ale lauter tun saccharification oxidized barrel.
+							| berliner weisse wort chiller adjunct hydrometer alcohol aau!
+							| sour/acidic sour/acidic chocolate malt ipa ipa hydrometer.
+					// /.box-body
+				// /.box
+			// /.col
+			.col-md-4
+				// Success box
+				.box.box-solid.bg-green
+					.box-header
+						h3.box-title Success Tile
+					.box-body
+						| Box class:
+						code .box.box-solid.bg-green
+						p
+							| amber, microbrewery abbey hydrometer, brewpub ale lauter tun saccharification oxidized barrel.
+							| berliner weisse wort chiller adjunct hydrometer alcohol aau!
+							| sour/acidic sour/acidic chocolate malt ipa ipa hydrometer.
+					// /.box-body
+				// /.box
+			// /.col
+			.col-md-4
+				// Warning box
+				.box.box-solid.bg-yellow
+					.box-header
+						h3.box-title Warning Tile
+					.box-body
+						| Box class:
+						code .box.box-solid.bg-yellow
+						p
+							| amber, microbrewery abbey hydrometer, brewpub ale lauter tun saccharification oxidized barrel.
+							| berliner weisse wort chiller adjunct hydrometer alcohol aau!
+							| sour/acidic sour/acidic chocolate malt ipa ipa hydrometer.
+					// /.box-body
+				// /.box
+			// /.col
+		// /.row
+		.row
+			.col-md-4
+				// Purple tile
+				.box.box-solid.bg-purple
+					.box-header
+						h3.box-title Purple Tile
+					.box-body
+						| Box class:
+						code .box.box-solid.bg-purple
+						p
+							| amber, microbrewery abbey hydrometer, brewpub ale lauter tun saccharification oxidized barrel.
+							| berliner weisse wort chiller adjunct hydrometer alcohol aau!
+							| sour/acidic sour/acidic chocolate malt ipa ipa hydrometer.
+					// /.box-body
+				// /.box
+			// /.col
+			.col-md-4
+				// Blue tile
+				.box.box-solid.bg-blue
+					.box-header
+						h3.box-title Blue Tile
+					.box-body
+						| Box class:
+						code .box.box-solid.bg-blue
+						p
+							| amber, microbrewery abbey hydrometer, brewpub ale lauter tun saccharification oxidized barrel.
+							| berliner weisse wort chiller adjunct hydrometer alcohol aau!
+							| sour/acidic sour/acidic chocolate malt ipa ipa hydrometer.
+					// /.box-body
+				// /.box
+			// /.col
+			.col-md-4
+				// Maroon tile
+				.box.box-solid.bg-maroon
+					.box-header
+						h3.box-title Maroon Tile
+					.box-body
+						| Box class:
+						code .box.box-solid.bg-maroon
+						p
+							| amber, microbrewery abbey hydrometer, brewpub ale lauter tun saccharification oxidized barrel.
+							| berliner weisse wort chiller adjunct hydrometer alcohol aau!
+							| sour/acidic sour/acidic chocolate malt ipa ipa hydrometer.
+					// /.box-body
+				// /.box
+			// /.col
+		// /.row
+	// /.content
+block javascript
+	// jQuery 2.0.2
+	script(src='/js/libs/jquery.min.js')
+	// Bootstrap
+	script(src='../js/bootstrap.min.js', type='text/javascript')
+	// AdminLTE App
+	script(src='../js/AdminLTE/app.js', type='text/javascript')
+	// AdminLTE for demo purposes
+	script(src='js/AdminLTE/demo.js', type='text/javascript')

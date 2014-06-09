@@ -1,0 +1,89 @@
+extends ../layout
+block content
+	// Content Header (Page header)
+	section.content-header
+		h1
+			| Sliders
+			small range sliders
+		ol.breadcrumb
+			li
+				a(href='#')
+					i.fa.fa-dashboard
+					| Home
+			li
+				a(href='#') UI
+			li.active Sliders
+	// Main content
+	section.content
+		.row
+			.col-xs-12
+				.box.box-primary
+					.box-header
+						h3.box-title Ion Slider
+					// /.box-header
+					.box-body
+						.row.margin
+							.col-sm-6
+								input#range_1(type='text', name='range_1', value='')
+							.col-sm-6
+								input#range_2(type='text', name='range_2', value='1000;100000', data-type='double', data-step='500', data-postfix=' €', data-from='30000', data-to='90000', data-hasgrid='true')
+						.row.margin
+							.col-sm-6
+								input#range_5(type='text', name='range_5', value='')
+							.col-sm-6
+								input#range_6(type='text', name='range_6', value='')
+						.row.margin
+							.col-sm-12
+								input#range_4(type='text', name='range_4', value='10000;100000')
+					// /.box-body
+				// /.box
+			// /.col
+		// /.row
+		.row
+			.col-xs-12
+				.box.box-primary
+					.box-header
+						h3.box-title Bootstrap Slider
+					// /.box-header
+					.box-body
+						.row.margin
+							.col-sm-6
+								input.slider.form-control(type='text', value='', data-slider-min='-200', data-slider-max='200', data-slider-step='5', data-slider-value='[-100,100]', data-slider-orientation='horizontal', data-slider-selection='before', data-slider-tooltip='show', data-slider-id='red')
+								p data-slider-id=&quot;red&quot;
+								input.slider.form-control(type='text', value='', data-slider-min='-200', data-slider-max='200', data-slider-step='5', data-slider-value='[-100,100]', data-slider-orientation='horizontal', data-slider-selection='before', data-slider-tooltip='show', data-slider-id='blue')
+								p data-slider-id=&quot;blue&quot;
+								input.slider.form-control(type='text', value='', data-slider-min='-200', data-slider-max='200', data-slider-step='5', data-slider-value='[-100,100]', data-slider-orientation='horizontal', data-slider-selection='before', data-slider-tooltip='show', data-slider-id='green')
+								p data-slider-id=&quot;green&quot;
+								input.slider.form-control(type='text', value='', data-slider-min='-200', data-slider-max='200', data-slider-step='5', data-slider-value='[-100,100]', data-slider-orientation='horizontal', data-slider-selection='before', data-slider-tooltip='show', data-slider-id='yellow')
+								p data-slider-id=&quot;yellow&quot;
+								input.slider.form-control(type='text', value='', data-slider-min='-200', data-slider-max='200', data-slider-step='5', data-slider-value='[-100,100]', data-slider-orientation='horizontal', data-slider-selection='before', data-slider-tooltip='show', data-slider-id='aqua')
+								p data-slider-id=&quot;aqua&quot;
+								input.slider.form-control(type='text', value='', data-slider-min='-200', data-slider-max='200', data-slider-step='5', data-slider-value='[-100,100]', data-slider-orientation='horizontal', data-slider-selection='before', data-slider-tooltip='show', data-slider-id='purple')
+								p(style='margin-top: 10px') data-slider-id=&quot;purple&quot;
+							.col-sm-6.text-center
+								input.slider.form-control(type='text', value='', data-slider-min='-200', data-slider-max='200', data-slider-step='5', data-slider-value='[-100,100]', data-slider-orientation='vertical', data-slider-selection='before', data-slider-tooltip='show', data-slider-id='red')
+								input.slider.form-control(type='text', value='', data-slider-min='-200', data-slider-max='200', data-slider-step='5', data-slider-value='[-100,100]', data-slider-orientation='vertical', data-slider-selection='before', data-slider-tooltip='show', data-slider-id='blue')
+								input.slider.form-control(type='text', value='', data-slider-min='-200', data-slider-max='200', data-slider-step='5', data-slider-value='[-100,100]', data-slider-orientation='vertical', data-slider-selection='before', data-slider-tooltip='show', data-slider-id='green')
+								input.slider.form-control(type='text', value='', data-slider-min='-200', data-slider-max='200', data-slider-step='5', data-slider-value='[-100,100]', data-slider-orientation='vertical', data-slider-selection='before', data-slider-tooltip='show', data-slider-id='yellow')
+								input.slider.form-control(type='text', value='', data-slider-min='-200', data-slider-max='200', data-slider-step='5', data-slider-value='[-100,100]', data-slider-orientation='vertical', data-slider-selection='before', data-slider-tooltip='show', data-slider-id='aqua')
+								input.slider.form-control(type='text', value='', data-slider-min='-200', data-slider-max='200', data-slider-step='5', data-slider-value='[-100,100]', data-slider-orientation='vertical', data-slider-selection='before', data-slider-tooltip='show', data-slider-id='purple')
+					// /.box-body
+				// /.box
+			// /.col
+		// /.row
+	// /.content
+	block javascript
+		// jQuery 2.0.2
+		script(src='/js/libs/jquery.min.js')
+		// Bootstrap
+		script(src='/js/bootstrap.min.js', type='text/javascript')
+		// AdminLTE App
+		script(src='/js/AdminLTE/app.js', type='text/javascript')
+		// AdminLTE for demo purposes
+		script(src='/js/AdminLTE/demo.js', type='text/javascript')
+		// Ion Slider
+		script(src='/js/plugins/ionslider/ion.rangeSlider.min.js', type='text/javascript')
+		// Bootstrap slider
+		script(src='/js/plugins/bootstrap-slider/bootstrap-slider.js', type='text/javascript')
+		//Page
+		script(src='/js/AdminLTE/UI/sliders.js', type='text/javascript')

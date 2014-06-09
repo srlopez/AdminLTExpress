@@ -1,0 +1,265 @@
+extends layout
+block content
+	// Content Header (Page header)
+	section.content-header.no-margin
+		h1.text-center
+			| Mailbox
+	// Main content
+	section.content
+		// MAILBOX BEGIN
+		.mailbox.row
+			.col-xs-12
+				.box.box-solid
+					.box-body
+						.row
+							.col-md-3.col-sm-4
+								//
+									BOXES are complex enough to move the .box-header around.
+									This is an example of having the box header within the box body
+								.box-header
+									i.fa.fa-inbox
+									h3.box-title INBOX
+								// compose message btn
+								a.btn.btn-block.btn-primary(data-toggle='modal', data-target='#compose-modal')
+									i.fa.fa-pencil
+									| Compose Message
+								// Navigation - folders
+								div(style='margin-top: 15px;')
+									ul.nav.nav-pills.nav-stacked
+										li.header Folders
+										li.active
+											a(href='#')
+												i.fa.fa-inbox
+												| Inbox (14)
+										li
+											a(href='#')
+												i.fa.fa-pencil-square-o
+												| Drafts
+										li
+											a(href='#')
+												i.fa.fa-mail-forward
+												| Sent
+										li
+											a(href='#')
+												i.fa.fa-star
+												| Starred
+										li
+											a(href='#')
+												i.fa.fa-folder
+												| Junk
+							// /.col (LEFT)
+							.col-md-9.col-sm-8
+								.row.pad
+									.col-sm-6
+										label(style='margin-right: 10px;')
+											input#check-all(type='checkbox')
+										// Action button
+										.btn-group
+											button.btn.btn-default.btn-sm.btn-flat.dropdown-toggle(type='button', data-toggle='dropdown')
+												| Action
+												span.caret
+											ul.dropdown-menu(role='menu')
+												li
+													a(href='#') Mark as read
+												li
+													a(href='#') Mark as unread
+												li.divider
+												li
+													a(href='#') Move to junk
+												li.divider
+												li
+													a(href='#') Delete
+									.col-sm-6.search-form
+										form.text-right(action='#')
+											.input-group
+												input.form-control.input-sm(type='text', placeholder='Search')
+												.input-group-btn
+													button.btn.btn-sm.btn-primary(type='submit', name='q')
+														i.fa.fa-search
+								// /.row
+								.table-responsive
+									// THE MESSAGES
+									table.table.table-mailbox
+										tr.unread
+											td.small-col
+												input(type='checkbox')
+											td.small-col
+												i.fa.fa-star
+											td.name
+												a(href='#') John Doe
+											td.subject
+												a(href='#') Urgent! Please read
+											td.time 12:30 PM
+										tr
+											td.small-col
+												input(type='checkbox')
+											td.small-col
+												i.fa.fa-star-o
+											td.name
+												a(href='#') John Doe
+											td.subject
+												a(href='#') Urgent! Please read
+											td.time 12:30 PM
+										tr
+											td.small-col
+												input(type='checkbox')
+											td.small-col
+												i.fa.fa-star-o
+											td.name
+												a(href='#') John Doe
+											td.subject
+												a(href='#') Urgent! Please read
+											td.time 12:30 PM
+										tr.unread
+											td.small-col
+												input(type='checkbox')
+											td.small-col
+												i.fa.fa-star-o
+											td.name
+												a(href='#') John Doe
+											td.subject
+												a(href='#') Urgent! Please read
+											td.time 12:30 PM
+										tr
+											td.small-col
+												input(type='checkbox')
+											td.small-col
+												i.fa.fa-star
+											td.name
+												a(href='#') John Doe
+											td.subject
+												a(href='#') Urgent! Please read
+											td.time 12:30 PM
+										tr
+											td.small-col
+												input(type='checkbox')
+											td.small-col
+												i.fa.fa-star
+											td.name
+												a(href='#') John Doe
+											td.subject
+												a(href='#') Urgent! Please read
+											td.time 12:30 PM
+										tr
+											td.small-col
+												input(type='checkbox')
+											td.small-col
+												i.fa.fa-star-o
+											td.name
+												a(href='#') John Doe
+											td.subject
+												a(href='#') Urgent! Please read
+											td.time 12:30 PM
+										tr
+											td.small-col
+												input(type='checkbox')
+											td.small-col
+												i.fa.fa-star
+											td.name
+												a(href='#') John Doe
+											td.subject
+												a(href='#') Urgent! Please read
+											td.time 12:30 PM
+										tr.unread
+											td.small-col
+												input(type='checkbox')
+											td.small-col
+												i.fa.fa-star-o
+											td.name
+												a(href='#') John Doe
+											td.subject
+												a(href='#') Urgent! Please read
+											td.time 12:30 PM
+										tr.unread
+											td.small-col
+												input(type='checkbox')
+											td.small-col
+												i.fa.fa-star-o
+											td.name
+												a(href='#') John Doe
+											td.subject
+												a(href='#') Urgent! Please read
+											td.time 12:30 PM
+										tr
+											td.small-col
+												input(type='checkbox')
+											td.small-col
+												i.fa.fa-star-o
+											td.name
+												a(href='#') John Doe
+											td.subject
+												a(href='#') Urgent! Please read
+											td.time 12:30 PM
+								// /.table-responsive
+							// /.col (RIGHT)
+						// /.row
+					// /.box-body
+					.box-footer.clearfix
+						.pull-right
+							small Showing 1-12/1,240
+							button.btn.btn-xs.btn-primary
+								i.fa.fa-caret-left
+							button.btn.btn-xs.btn-primary
+								i.fa.fa-caret-right
+					// box-footer
+				// /.box
+			// /.col (MAIN)
+		// MAILBOX END
+	// /.content
+block message-modal
+	// COMPOSE MESSAGE MODAL
+	#compose-modal.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
+		.modal-dialog
+			.modal-content
+				.modal-header
+					button.close(type='button', data-dismiss='modal', aria-hidden='true') &times;
+					h4.modal-title
+						i.fa.fa-envelope-o
+						| Compose New Message
+				form(action='#', method='post')
+					.modal-body
+						.form-group
+							.input-group
+								span.input-group-addon TO:
+								input.form-control(name='email_to', type='email', placeholder='Email TO')
+						.form-group
+							.input-group
+								span.input-group-addon CC:
+								input.form-control(name='email_to', type='email', placeholder='Email CC')
+						.form-group
+							.input-group
+								span.input-group-addon BCC:
+								input.form-control(name='email_to', type='email', placeholder='Email BCC')
+						.form-group
+							textarea#email_message.form-control(name='message', placeholder='Message', style='height: 120px;')
+						.form-group
+							.btn.btn-success.btn-file
+								i.fa.fa-paperclip
+								| Attachment
+								input(type='file', name='attachment')
+							p.help-block Max. 32MB
+					.modal-footer.clearfix
+						button.btn.btn-danger(type='button', data-dismiss='modal')
+							i.fa.fa-times
+							| Discard
+						button.btn.btn-primary.pull-left(type='submit')
+							i.fa.fa-envelope
+							| Send Message
+			// /.modal-content
+		// /.modal-dialog
+	// /.modal
+block javascript
+	// jQuery 2.0.2
+	script(src='/js/libs/jquery.min.js')
+	// Bootstrap
+	script(src='/js/bootstrap.min.js', type='text/javascript')
+	// AdminLTE App
+	script(src='/js/AdminLTE/app.js', type='text/javascript')
+	// AdminLTE for demo purposes
+	script(src='/js/AdminLTE/demo.js', type='text/javascript')
+	// Bootstrap WYSIHTML5
+	script(src='/js/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js', type='text/javascript')
+	// iCheck
+	script(src='/js/plugins/iCheck/icheck.min.js', type='text/javascript')
+	// Page script
+	script(src='/js/AdminLTE/mailbox.js', type='text/javascript')

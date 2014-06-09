@@ -1,0 +1,398 @@
+doctype html
+html
+	head
+		meta(charset='UTF-8')
+		title AdminLTE | Dashboard
+		meta(content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no', name='viewport')
+		// bootstrap 3.0.2
+		link(href='/css/bootstrap.min.css', rel='stylesheet', type='text/css')
+		// font Awesome
+		link(href='/css/font-awesome.min.css', rel='stylesheet', type='text/css')
+		// Ionicons
+		link(href='/css/ionicons.min.css', rel='stylesheet', type='text/css')
+		// Morris chart
+		link(href='/css/morris/morris.css', rel='stylesheet', type='text/css')
+		// jvectormap
+		link(href='/css/jvectormap/jquery-jvectormap-1.2.2.css', rel='stylesheet', type='text/css')
+		// fullCalendar
+		link(href='/css/fullcalendar/fullcalendar.css', rel='stylesheet', type='text/css')
+		// Daterange picker
+		link(href='/css/daterangepicker/daterangepicker-bs3.css', rel='stylesheet', type='text/css')
+		// bootstrap wysihtml5 - text editor
+		link(href='/css/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css', rel='stylesheet', type='text/css')
+		// iCheck for checkboxes and radio inputs
+		link(href='/css/iCheck/all.css', rel='stylesheet', type='text/css')
+		// Bootstrap Color Picker
+		link(href='/css/colorpicker/bootstrap-colorpicker.min.css', rel='stylesheet')
+		// Bootstrap time Picker
+		link(href='/css/timepicker/bootstrap-timepicker.min.css', rel='stylesheet')
+		// DATA TABLES
+		link(href='/css/datatables/dataTables.bootstrap.css', rel='stylesheet', type='text/css')
+		// demo style for icons
+		link(href='/css/AdminLTE/icons.css', rel='stylesheet', type='text/css')
+		// Ion Slider
+		link(href='/css/ionslider/ion.rangeSlider.css', rel='stylesheet', type='text/css')
+		// ion slider Nice
+		link(href='/css/ionslider/ion.rangeSlider.skinNice.css', rel='stylesheet', type='text/css')
+		// bootstrap slider
+		link(href='/css/bootstrap-slider/slider.css', rel='stylesheet', type='text/css')
+		// Theme style
+		link(href='/css/AdminLTE.css', rel='stylesheet', type='text/css')
+		// HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
+		// WARNING: Respond.js doesn't work if you view the page via file://
+		//if lt IE 9
+			script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js')
+			script(src='https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js')
+	body.skin-blue
+		// header logo: style can be found in header.less
+		header.header
+			a.logo(href='/index.html')
+				// Add the class icon to your logo image or logo icon to add the margining
+				| AdminLTE
+			// Header Navbar: style can be found in header.less
+			nav.navbar.navbar-static-top(role='navigation')
+				// Sidebar toggle button
+				a.navbar-btn.sidebar-toggle(href='#', data-toggle='offcanvas', role='button')
+					span.sr-only Toggle navigation
+					span.icon-bar
+					span.icon-bar
+					span.icon-bar
+				.navbar-right
+					ul.nav.navbar-nav
+						// Messages: style can be found in dropdown.less
+						li.dropdown.messages-menu
+							a.dropdown-toggle(href='#', data-toggle='dropdown')
+								i.fa.fa-envelope
+								span.label.label-success 4
+							ul.dropdown-menu
+								li.header You have 4 messages
+								li
+									// inner menu: contains the actual data
+									ul.menu
+										li
+											// start message
+											a(href='#')
+												.pull-left
+													img.img-circle(src='/img/avatar3.png', alt='User Image')
+												h4
+													| Support Team
+													small
+														i.fa.fa-clock-o
+														| 5 mins
+												p Why not buy a new awesome theme?
+										// end message
+										li
+											a(href='#')
+												.pull-left
+													img.img-circle(src='/img/avatar2.png', alt='user image')
+												h4
+													| AdminLTE Design Team
+													small
+														i.fa.fa-clock-o
+														| 2 hours
+												p Why not buy a new awesome theme?
+										li
+											a(href='#')
+												.pull-left
+													img.img-circle(src='/img/avatar.png', alt='user image')
+												h4
+													| Developers
+													small
+														i.fa.fa-clock-o
+														| Today
+												p Why not buy a new awesome theme?
+										li
+											a(href='#')
+												.pull-left
+													img.img-circle(src='/img/avatar2.png', alt='user image')
+												h4
+													| Sales Department
+													small
+														i.fa.fa-clock-o
+														| Yesterday
+												p Why not buy a new awesome theme?
+										li
+											a(href='#')
+												.pull-left
+													img.img-circle(src='/img/avatar.png', alt='user image')
+												h4
+													| Reviewers
+													small
+														i.fa.fa-clock-o
+														| 2 days
+												p Why not buy a new awesome theme?
+								li.footer
+									a(href='#') See All Messages
+						// Notifications: style can be found in dropdown.less
+						li.dropdown.notifications-menu
+							a.dropdown-toggle(href='#', data-toggle='dropdown')
+								i.fa.fa-warning
+								span.label.label-warning 10
+							ul.dropdown-menu
+								li.header You have 10 notifications
+								li
+									// inner menu: contains the actual data
+									ul.menu
+										li
+											a(href='#')
+												i.ion.ion-ios7-people.info
+												| 5 new members joined today
+										li
+											a(href='#')
+												i.fa.fa-warning.danger
+												| Very long description here that may not fit into the page and may cause design problems
+										li
+											a(href='#')
+												i.fa.fa-users.warning
+												| 5 new members joined
+										li
+											a(href='#')
+												i.ion.ion-ios7-cart.success
+												| 25 sales made
+										li
+											a(href='#')
+												i.ion.ion-ios7-person.danger
+												| You changed your username
+								li.footer
+									a(href='#') View all
+						// Tasks: style can be found in dropdown.less
+						li.dropdown.tasks-menu
+							a.dropdown-toggle(href='#', data-toggle='dropdown')
+								i.fa.fa-tasks
+								span.label.label-danger 9
+							ul.dropdown-menu
+								li.header You have 9 tasks
+								li
+									// inner menu: contains the actual data
+									ul.menu
+										li
+											// Task item
+											a(href='#')
+												h3
+													| Design some buttons
+													small.pull-right 20%
+												.progress.xs
+													.progress-bar.progress-bar-aqua(style='width: 20%', role='progressbar', aria-valuenow='20', aria-valuemin='0', aria-valuemax='100')
+														span.sr-only 20% Complete
+										// end task item
+										li
+											// Task item
+											a(href='#')
+												h3
+													| Create a nice theme
+													small.pull-right 40%
+												.progress.xs
+													.progress-bar.progress-bar-green(style='width: 40%', role='progressbar', aria-valuenow='20', aria-valuemin='0', aria-valuemax='100')
+														span.sr-only 40% Complete
+										// end task item
+										li
+											// Task item
+											a(href='#')
+												h3
+													| Some task I need to do
+													small.pull-right 60%
+												.progress.xs
+													.progress-bar.progress-bar-red(style='width: 60%', role='progressbar', aria-valuenow='20', aria-valuemin='0', aria-valuemax='100')
+														span.sr-only 60% Complete
+										// end task item
+										li
+											// Task item
+											a(href='#')
+												h3
+													| Make beautiful transitions
+													small.pull-right 80%
+												.progress.xs
+													.progress-bar.progress-bar-yellow(style='width: 80%', role='progressbar', aria-valuenow='20', aria-valuemin='0', aria-valuemax='100')
+														span.sr-only 80% Complete
+										// end task item
+								li.footer
+									a(href='#') View all tasks
+						// User Account: style can be found in dropdown.less
+						li.dropdown.user.user-menu
+							a.dropdown-toggle(href='#', data-toggle='dropdown')
+								i.glyphicon.glyphicon-user
+								span
+									| Jane Doe
+									i.caret
+							ul.dropdown-menu
+								// User image
+								li.user-header.bg-light-blue
+									img.img-circle(src='/img/avatar3.png', alt='User Image')
+									p
+										| Jane Doe - Web Developer
+										small Member since Nov. 2012
+								// Menu Body
+								li.user-body
+									.col-xs-4.text-center
+										a(href='#') Followers
+									.col-xs-4.text-center
+										a(href='#') Sales
+									.col-xs-4.text-center
+										a(href='#') Friends
+								// Menu Footer
+								li.user-footer
+									.pull-left
+										a.btn.btn-default.btn-flat(href='#') Profile
+									.pull-right
+										a.btn.btn-default.btn-flat(href='#') Sign out
+		.wrapper.row-offcanvas.row-offcanvas-left
+			// Left side column. contains the logo and sidebar
+			aside.left-side.sidebar-offcanvas
+				// sidebar: style can be found in sidebar.less
+				section.sidebar
+					// Sidebar user panel
+					.user-panel
+						.pull-left.image
+							img.img-circle(src='/img/avatar3.png', alt='User Image')
+						.pull-left.info
+							p Hello, Jane
+							a(href='#')
+								i.fa.fa-circle.text-success
+								| Online
+					// search form
+					form.sidebar-form(action='#', method='get')
+						.input-group
+							input.form-control(type='text', name='q', placeholder='Search...')
+							span.input-group-btn
+								button#search-btn.btn.btn-flat(type='submit', name='seach')
+									i.fa.fa-search
+					// /.search form
+					// sidebar menu: : style can be found in sidebar.less
+					ul.sidebar-menu
+						li.active
+							a(href='index.html')
+								i.fa.fa-dashboard
+								span Dashboard
+						li
+							a(href='widgets.html')
+								i.fa.fa-th
+								span Widgets
+								small.badge.pull-right.bg-green new
+						li.treeview
+							a(href='#')
+								i.fa.fa-bar-chart-o
+								span Charts
+								i.fa.fa-angle-left.pull-right
+							ul.treeview-menu
+								li
+									a(href='/charts/morris.html')
+										i.fa.fa-angle-double-right
+										| Morris
+								li
+									a(href='/charts/flot.html')
+										i.fa.fa-angle-double-right
+										| Flot
+								li
+									a(href='/charts/inline.html')
+										i.fa.fa-angle-double-right
+										| Inline charts
+						li.treeview
+							a(href='#')
+								i.fa.fa-laptop
+								span UI Elements
+								i.fa.fa-angle-left.pull-right
+							ul.treeview-menu
+								li
+									a(href='/UI/general.html')
+										i.fa.fa-angle-double-right
+										| General
+								li
+									a(href='/UI/icons.html')
+										i.fa.fa-angle-double-right
+										| Icons
+								li
+									a(href='/UI/buttons.html')
+										i.fa.fa-angle-double-right
+										| Buttons
+								li
+									a(href='/UI/sliders.html')
+										i.fa.fa-angle-double-right
+										| Sliders
+								li
+									a(href='/UI/timeline.html')
+										i.fa.fa-angle-double-right
+										| Timeline
+						li.treeview
+							a(href='#')
+								i.fa.fa-edit
+								span Forms
+								i.fa.fa-angle-left.pull-right
+							ul.treeview-menu
+								li
+									a(href='/forms/general.html')
+										i.fa.fa-angle-double-right
+										| General Elements
+								li
+									a(href='/forms/advanced.html')
+										i.fa.fa-angle-double-right
+										| Advanced Elements
+								li
+									a(href='/forms/editors.html')
+										i.fa.fa-angle-double-right
+										| Editors
+						li.treeview
+							a(href='#')
+								i.fa.fa-table
+								span Tables
+								i.fa.fa-angle-left.pull-right
+							ul.treeview-menu
+								li
+									a(href='/tables/simple.html')
+										i.fa.fa-angle-double-right
+										| Simple tables
+								li
+									a(href='/tables/data.html')
+										i.fa.fa-angle-double-right
+										| Data tables
+						li
+							a(href='calendar.html')
+								i.fa.fa-calendar
+								span Calendar
+								small.badge.pull-right.bg-red 3
+						li
+							a(href='mailbox.html')
+								i.fa.fa-envelope
+								span Mailbox
+								small.badge.pull-right.bg-yellow 12
+						li.treeview
+							a(href='#')
+								i.fa.fa-folder
+								span Examples
+								i.fa.fa-angle-left.pull-right
+							ul.treeview-menu
+								li
+									a(href='/examples/invoice.html')
+										i.fa.fa-angle-double-right
+										| Invoice
+								li
+									a(href='/examples/login.html')
+										i.fa.fa-angle-double-right
+										| Login
+								li
+									a(href='/examples/register.html')
+										i.fa.fa-angle-double-right
+										| Register
+								li
+									a(href='/examples/lockscreen.html')
+										i.fa.fa-angle-double-right
+										| Lockscreen
+								li
+									a(href='/examples/404.html')
+										i.fa.fa-angle-double-right
+										| 404 Error
+								li
+									a(href='/examples/500.html')
+										i.fa.fa-angle-double-right
+										| 500 Error
+								li
+									a(href='/examples/blank.html')
+										i.fa.fa-angle-double-right
+										| Blank Page
+				// /.sidebar
+			// Right side column. Contains the navbar and content of the page
+			aside.right-side
+				block content
+			// /.right-side
+		// ./wrapper
+		block message-modal
+		block javascript

@@ -1,0 +1,224 @@
+extends ../layout
+block content
+	// Content Header (Page header)
+	section.content-header
+		h1
+			| Advanced Form Elements
+			small Preview
+		ol.breadcrumb
+			li
+				a(href='#')
+					i.fa.fa-dashboard
+					| Home
+			li
+				a(href='#') Forms
+			li.active Advanced Elements
+	// Main content
+	section.content
+		.row
+			.col-md-6
+				.box.box-danger
+					.box-header
+						h3.box-title Input masks
+					.box-body
+						// Date dd/mm/yyyy
+						.form-group
+							label Date masks:
+							.input-group
+								.input-group-addon
+									i.fa.fa-calendar
+								input.form-control(type='text', data-inputmask="'alias': 'dd/mm/yyyy'", data-mask='')
+							// /.input group
+						// /.form group
+						// Date mm/dd/yyyy
+						.form-group
+							.input-group
+								.input-group-addon
+									i.fa.fa-calendar
+								input.form-control(type='text', data-inputmask="'alias': 'mm/dd/yyyy'", data-mask='')
+							// /.input group
+						// /.form group
+						// phone mask
+						.form-group
+							label US phone mask:
+							.input-group
+								.input-group-addon
+									i.fa.fa-phone
+								input.form-control(type='text', data-inputmask='"mask": "(999) 999-9999"', data-mask='')
+							// /.input group
+						// /.form group
+						// phone mask
+						.form-group
+							label Intl US phone mask:
+							.input-group
+								.input-group-addon
+									i.fa.fa-phone
+								input.form-control(type='text', data-inputmask="'mask': ['999-999-9999 [x99999]', '+099 99 99 9999[9]-9999']", data-mask='')
+							// /.input group
+						// /.form group
+						// IP mask
+						.form-group
+							label IP mask:
+							.input-group
+								.input-group-addon
+									i.fa.fa-laptop
+								input.form-control(type='text', data-inputmask="'alias': 'ip'", data-mask='')
+							// /.input group
+						// /.form group
+					// /.box-body
+				// /.box
+				.box.box-info
+					.box-header
+						h3.box-title Color &amp; Time Picker
+					.box-body
+						// Color Picker
+						.form-group
+							label Color picker:
+							input.form-control.my-colorpicker1(type='text')
+						// /.form group
+						// Color Picker
+						.form-group
+							label Color picker with addon:
+							.input-group.my-colorpicker2
+								input.form-control(type='text')
+								.input-group-addon
+									i
+							// /.input group
+						// /.form group
+						// time Picker
+						.bootstrap-timepicker
+							.form-group
+								label Time picker:
+								.input-group
+									input.form-control.timepicker(type='text')
+									.input-group-addon
+										i.fa.fa-clock-o
+								// /.input group
+							// /.form group
+					// /.box-body
+				// /.box
+			// /.col (left)
+			.col-md-6
+				.box.box-primary
+					.box-header
+						h3.box-title Date picker
+					.box-body
+						// Date range
+						.form-group
+							label Date range:
+							.input-group
+								.input-group-addon
+									i.fa.fa-calendar
+								input#reservation.form-control.pull-right(type='text')
+							// /.input group
+						// /.form group
+						// Date and time range
+						.form-group
+							label Date and time range:
+							.input-group
+								.input-group-addon
+									i.fa.fa-clock-o
+								input#reservationtime.form-control.pull-right(type='text')
+							// /.input group
+						// /.form group
+						// Date and time range
+						.form-group
+							label Date range button:
+							.input-group
+								button#daterange-btn.btn.btn-default.pull-right
+									i.fa.fa-calendar
+									| Date range picker
+									i.fa.fa-caret-down
+						// /.form group
+					// /.box-body
+				// /.box
+				// iCheck
+				.box.box-success
+					.box-header
+						h3.box-title iCheck - Checkbox &amp; Radio Inputs
+					.box-body
+						// Minimal style
+						// checkbox
+						.form-group
+							label
+								input.minimal(type='checkbox', checked='')
+							label
+								input.minimal(type='checkbox')
+							label
+								input.minimal(type='checkbox', disabled='')
+								| Minimal skin checkbox
+						// radio
+						.form-group
+							label
+								input.minimal(type='radio', name='r1', checked='')
+							label
+								input.minimal(type='radio', name='r1')
+							label
+								input.minimal(type='radio', name='r1', disabled='')
+								| Minimal skin radio
+						// Minimal red style
+						// checkbox
+						.form-group
+							label
+								input.minimal-red(type='checkbox', checked='')
+							label
+								input.minimal-red(type='checkbox')
+							label
+								input.minimal-red(type='checkbox', disabled='')
+								| Minimal red skin checkbox
+						// radio
+						.form-group
+							label
+								input.minimal-red(type='radio', name='r2', checked='')
+							label
+								input.minimal-red(type='radio', name='r2')
+							label
+								input.minimal-red(type='radio', name='r2', disabled='')
+								| Minimal red skin radio
+						// Minimal red style
+						// checkbox
+						.form-group
+							label
+								input.flat-red(type='checkbox', checked='')
+							label
+								input.flat-red(type='checkbox')
+							label
+								input.flat-red(type='checkbox', disabled='')
+								| Flat red skin checkbox
+						// radio
+						.form-group
+							label
+								input.flat-red(type='radio', name='r3', checked='')
+							label
+								input.flat-red(type='radio', name='r3')
+							label
+								input.flat-red(type='radio', name='r3', disabled='')
+								| Flat red skin radio
+					// /.box-body
+					.box-footer
+						| Many more skins available.
+				// /.box
+			// /.col (right)
+		// /.row
+	// /.content
+block javascript
+	// jQuery 2.0.2
+	script(src='/js/libs/jquery.min.js')
+	// Bootstrap
+	script(src='/js/bootstrap.min.js', type='text/javascript')
+	// InputMask
+	script(src='/js/plugins/input-mask/jquery.inputmask.js', type='text/javascript')
+	script(src='/js/plugins/input-mask/jquery.inputmask.date.extensions.js', type='text/javascript')
+	script(src='/js/plugins/input-mask/jquery.inputmask.extensions.js', type='text/javascript')
+	// date-range-picker
+	script(src='/js/plugins/daterangepicker/daterangepicker.js', type='text/javascript')
+	// bootstrap color picker
+	script(src='/js/plugins/colorpicker/bootstrap-colorpicker.min.js', type='text/javascript')
+	// bootstrap time picker
+	script(src='/js/plugins/timepicker/bootstrap-timepicker.min.js', type='text/javascript')
+	// AdminLTE App
+	script(src='/js/AdminLTE/app.js', type='text/javascript')
+	// AdminLTE for demo purposes
+	script(src='/js/AdminLTE/demo.js', type='text/javascript')
+	// Page script
+	script(src='/js/AdminLTE/forms/advanced.js',type='text/javascript')
